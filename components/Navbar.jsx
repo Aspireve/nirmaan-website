@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import styles from "../styles";
 import { navVariants } from "../utils/motion";
+import Link from "next/link";
 const Navbar = () => (
   <motion.nav
     variants={navVariants}
@@ -34,10 +35,10 @@ const Navbar = () => (
         THE POD
       </h2>
       <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
-        PARTNERS
+        <Link href="/Partners">PARTNERS</Link> 
       </h2>
       <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
-        CONTACT
+        <Link href= "/Contact">CONTACT</Link>
       </h2>
       <img
         src="/menu.svg"

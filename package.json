@@ -9,13 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@formspree/react": "^2.5.1",
     "@react-three/drei": "^9.88.11",
     "axios": "^1.6.2",
     "eslint-config-next": "13.0.3",
     "framer-motion": "^7.10.3",
     "next": "13.0.3",
+    "nodemailer": "^6.9.7",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-toastify": "^9.1.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
