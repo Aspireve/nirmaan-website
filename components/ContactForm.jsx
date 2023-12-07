@@ -13,9 +13,14 @@ async function handleSubmit(event) {
         email:String(event.target.email.value),
         message: String(event.target.message.value),
     }
+    
+    serviceID = process.env.SERVICE_ID;
+    templateID = process.env.TEMPLATE_ID;
+    publicKey = process.env.PUBLIC_KEY;
+
 
     console.log(data);
-    emailjs.send('service_cks7wjs','template_ng5nebm',data,'7-NTgOk-nF075TP92')
+    emailjs.send(serviceID,templateID,data,publicKey)
 	.then((response) => {
 	   console.log('SUCCESS!', response.status, response.text);
      event.target.reset();
