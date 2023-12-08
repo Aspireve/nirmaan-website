@@ -16,17 +16,18 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| About Nirmaan" textStyles="text-center" />
+      <TypingText title="| About Us" textStyles="text-center" />
 
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
-        <span className="font-extrabold text-white">Nirmaan Hyperloop</span> We,
-        at Nirmaan Hyperloop, aim to develop and innovate new modes of
-        transport. Founded in 2018, now a team of 40 creative minds from various
-        engineering domains, Nirmaan Hyperloop aims to build a Globally
-        recognizable Hyperloop pod. The team aims to research the entire{" "}
+        We, at{" "}
+        <span className="font-extrabold text-white">Nirmaan Hyperloop</span>,
+        aim to develop and innovate new modes of transport. Founded in 2018, now
+        a team of 40 creative minds from various engineering domains, Nirmaan
+        Hyperloop aims to build a Globally recognizable Hyperloop pod. The team
+        aims to research the entire{" "}
         <span className="font-extrabold text-white">Hyperloop Ecosystem</span>{" "}
         to bring this technology to reality as soon and as efficiently as
         possible. These Competitions provide us with a platform to present our

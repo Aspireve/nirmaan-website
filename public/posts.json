@@ -1,0 +1,25 @@
+[
+  {
+    "username": "sushan1",
+    "email": "user1@example.com",
+    "title": "sushan1",
+    "image": "nirmaan1.webp",
+    "caption": "This is the first post."
+  },
+
+  {
+    "username": "user2",
+    "email": "user1@example.com",
+    "title": "Second Post",
+    "image": "nirmaan2.webp",
+    "caption": "This is the second post."
+  },
+
+  {
+    "username": "user2",
+    "email": "user1@example.com",
+    "title": "Third Post",
+    "image": "nirmaan3.webp",
+    "caption": "This is the third post."
+  }
+]
