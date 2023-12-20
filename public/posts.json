@@ -1,25 +1,35 @@
 [
   {
     "username": "sushan1",
+    "date": "13112023",
     "email": "user1@example.com",
-    "title": "sushan1",
+    "title": "Post 1",
     "image": "nirmaan1.webp",
     "caption": "This is the first post."
   },
-
   {
-    "username": "user2",
+    "username": "sushan1",
+    "date": "13112023",
     "email": "user1@example.com",
-    "title": "Second Post",
+    "title": "Post 2",
     "image": "nirmaan2.webp",
     "caption": "This is the second post."
   },
-
   {
-    "username": "user2",
+    "username": "sushan1",
+    "date": "14112023",
     "email": "user1@example.com",
-    "title": "Third Post",
+    "title": "Post 3",
     "image": "nirmaan3.webp",
     "caption": "This is the third post."
+  },
+
+  {
+    "username": "sushan",
+    "date": "15112023",
+    "email": "uchilsushan36@gmail.com",
+    "title": "Test post",
+    "image": "Capture34.JPG",
+    "caption": "Test"
   }
 ]

@@ -1,68 +1,35 @@
 "use client";
-
-import { motion } from "framer-motion";
+import React from "react";
 import { socials } from "../constants";
 
-import styles from "../styles";
-import { footerVariants } from "../utils/motion";
-
 const Footer = () => (
-  <motion.footer
-    variants={footerVariants}
-    initial="hidden"
-    whileInView="show"
-    className={`${styles.xPaddings} py-8 relative`}
-  >
-    <div className="footer-gradient" />
-    <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
-      <div className="flex items-center justify-between flex-wrap gap-5">
-        <h4 className="font-bold md:text-[64px] text-[44px] text-white">
-          Nirmaan Hyperloop
-        </h4>
-        <button
-          type="button"
-          className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]"
-        >
-          <img
-            src="/headset.svg"
-            alt="headset"
-            className="w-[24px] h-[24px] object-contain"
-          />
-          <span className="font-normal text-[16px] text-white">
-            Implementing the Future
-          </span>
-        </button>
+  <footer className="py-8 relative bg-gradient-to-t from-gray-800 to-transparent">
+    <div className="container mx-auto flex flex-col gap-8">
+      <div className="flex items-center justify-between">
+        <h4 className="font-bold text-2xl text-white">Nirmaan Hyperloop</h4>
+        <p className="font-light text-white">
+          © 2023 - 2024 Nirmaan HyperLoop. All rights reserved.
+        </p>
       </div>
 
-      <div className="flex flex-col">
-        <div className="mb-[50px] h-[2px] bg-white opacity-10" />
-
-        <div className="flex items-center justify-between flex-wrap gap-4">
-          <h4 className="font-extrabold text-[24px] text-white">Nirmaan</h4>
-          <p className="font-normal text-[14px] text-white opacity-50">
-            Copyright © 2023 - 2024 Nirmaan Hyperloop. All rights reserved.
-          </p>
-
-          <div className="flex gap-4">
-            {socials.map((social) => (
-              <a
-                key={social.name}
-                href={social.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={social.url}
-                  alt={social.name}
-                  className="w-[24px] h-[24px] object-contain cursor-pointer"
-                />
-              </a>
-            ))}
-          </div>
-        </div>
+      <div className="flex gap-4">
+        {socials.map((social) => (
+          <a
+            key={social.name}
+            href={social.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={social.url}
+              alt={social.name}
+              className="w-6 h-6 object-contain cursor-pointer"
+            />
+          </a>
+        ))}
       </div>
     </div>
-  </motion.footer>
+  </footer>
 );
 
 export default Footer;

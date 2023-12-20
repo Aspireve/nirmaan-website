@@ -1,4 +1,5 @@
 import { Footer, Navbar } from "../components";
+import StarsCanvas from "../components/Starscanvas";
 import {
   About,
   Explore,
@@ -17,6 +18,7 @@ const Page = () => (
       <About />
       <div className="gradient-03 z-0" />
       <Explore />
+      <StarsCanvas />
     </div>
     <div className="relative">
       <GetStarted />

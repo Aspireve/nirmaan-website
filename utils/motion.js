@@ -1,13 +1,18 @@
 export const navVariants = {
   hidden: {
     opacity: 0,
-    y: -50,
+    backgroundColor: "transparent", // Initial background color
+  },
+  show: {
+    opacity: 1,
+    backgroundColor: "black", // Set the desired background color during animation
     transition: {
       type: "spring",
       stiffness: 300,
       damping: 140,
     },
   },
+
   show: {
     opacity: 1,
     y: 0,

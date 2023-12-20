@@ -3,16 +3,17 @@ import { motion } from "framer-motion";
 import styles from "../styles";
 import { navVariants } from "../utils/motion";
 import Link from "next/link";
+
 const Navbar = () => (
   <motion.nav
     variants={navVariants}
     initial="hidden"
     whileInView="show"
-    className={`${styles.xPaddings} py-8 relative`}
+    className={`${styles.xPaddings} py-8 relative bg-black`}
   >
     <div className="absolute w-[50%] inset-0 gradient-01" />
     <div
-      className={`${styles.innerWidth} mx-auto flex flex-col sm:flex-row justify-between gap-8`}
+      className={`${styles.innerWidth} mx-auto flex flex-col sm:flex-row justify-between gap-8 bg-black`}
     >
       <img
         src="/search.svg"
@@ -31,14 +32,27 @@ const Navbar = () => (
       <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
         TIMELINE
       </h2>
-      <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
-        THE POD
+      <h2
+        className="font-extrabold text-[24px] leading-[30px] text-white"
+        style={{ zIndex: 5 }}
+      >
+        <Link href="/Pod">THE POD</Link>
       </h2>
-      <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
-        <Link href="/Partners">PARTNERS</Link> 
+      <h2
+        className="font-extrabold text-[24px] leading-[30px] text-white"
+        style={{ zIndex: 5 }}
+      >
+        <Link href="/Partners" style={{ zIndex: 3 }}>
+          PARTNERS
+        </Link>
       </h2>
-      <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
-        <Link href= "/Contact">CONTACT</Link>
+      <h2
+        className="font-extrabold text-[24px] leading-[30px] text-white"
+        style={{ zIndex: 5 }}
+      >
+        <Link href="/Contact" style={{ zIndex: 4 }}>
+          CONTACT
+        </Link>
       </h2>
       <img
         src="/menu.svg"

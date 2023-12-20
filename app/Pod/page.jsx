@@ -1,17 +1,15 @@
-import Navbar from "../../components/Navbar";
+"use client";
+import { Navbar } from "../../components";
 import Footer from "../../components/Footer";
-import ContactForm from "../../components/ContactForm";
 
 function page() {
   return (
     <>
-      <div className="bg-black">
+      <div className="w-screen h-full bg-[#1A232E]">
         <Navbar />
-        <ContactForm />
         <Footer />
       </div>
     </>
   );
 }
-
 export default page;

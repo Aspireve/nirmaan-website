@@ -1,53 +1,65 @@
 "use client";
 
+import React from "react";
 import { motion } from "framer-motion";
 
-import styles from "../styles";
-import { slideIn, staggerContainer, textVariant } from "../utils/motion";
-
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
+  <section className="py-20  text-white bg-black" style={{ zIndex: 5 }}>
     <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      className="max-w-4xl mx-auto text-center"
+      style={{ zIndex: 5 }}
     >
-      <div className="flex justify-center items-center flex-col relative z-10">
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          Nirmaan
-        </motion.h1>
-        <motion.div
-          variants={textVariant(1.2)}
-          className="flex flex-row justify-center items-center"
-        >
-          <h1 className={styles.heroHeading}>Hyperl∞p</h1>
-        </motion.div>
-      </div>
-
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="relative w-full md:-mt-[20px] -mt-[12px]"
+      <motion.h1
+        className="text-4xl md:text-6xl font-bold mb-6"
+        style={{ zIndex: 5 }}
       >
-        <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
+        Implementing the Future with
+      </motion.h1>
+      <motion.h1
+        className="text-5xl md:text-7xl font-bold mb-8"
+        style={{ zIndex: 5 }}
+      >
+        Nirmaan Hyperloop
+      </motion.h1>
 
-        <img
-          src="/cover.png"
-          alt="hero_cover"
-          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
-        />
+      <motion.p className="text-lg md:text-xl mb-12" style={{ zIndex: 5 }}>
+        Embracing cutting-edge technology and sustainable innovation to redefine
+        the future of transportation. Embark on a journey of limitless
+        possibilities.
+      </motion.p>
 
-        <a href="#explore">
-          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
-            <img
-              src="/stamp.png"
-              alt="stamp"
-              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
-            />
-          </div>
+      <motion.div className="flex justify-center" style={{ zIndex: 5 }}>
+        <a
+          href="#explore"
+          className="bg-white text-black font-bold py-2 px-6 rounded-full "
+          style={{ zIndex: 5 }}
+        >
+          Explore Now
         </a>
       </motion.div>
+    </motion.div>
+
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8, delay: 0.3 }}
+      className="mt-12 relative"
+      style={{ zIndex: 5 }}
+    >
+      <div className="absolute w-full h-64 rounded-tl-full " />
+
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.9 }}
+        transition={{ duration: 0.8, delay: 0.8 }}
+        src="/pod1.png"
+        alt="hero_cover"
+        className="w-full h-64 object-cover rounded-tl-full shadow-xl"
+        style={{ zIndex: 5 }}
+      />
     </motion.div>
   </section>
 );
