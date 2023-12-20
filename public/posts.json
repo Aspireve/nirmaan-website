@@ -1,35 +1,34 @@
 [
   {
-    "username": "sushan1",
-    "date": "13112023",
-    "email": "user1@example.com",
-    "title": "Post 1",
-    "image": "nirmaan1.webp",
-    "caption": "This is the first post."
-  },
-  {
-    "username": "sushan1",
-    "date": "13112023",
-    "email": "user1@example.com",
-    "title": "Post 2",
-    "image": "nirmaan2.webp",
-    "caption": "This is the second post."
-  },
-  {
-    "username": "sushan1",
-    "date": "14112023",
-    "email": "user1@example.com",
-    "title": "Post 3",
-    "image": "nirmaan3.webp",
-    "caption": "This is the third post."
-  },
-
-  {
-    "username": "sushan",
-    "date": "15112023",
+    "username": "sushan4",
     "email": "uchilsushan36@gmail.com",
-    "title": "Test post",
-    "image": "Capture34.JPG",
-    "caption": "Test"
+    "title": "test1",
+    "image": "nirmaan1.webp",
+    "caption": "This comes first",
+    "date": "2023-12-20"
+  },
+  {
+    "username": "sushan4",
+    "email": "uchilsushan36@gmail.com",
+    "title": "test3",
+    "image": "nirmaan2.webp",
+    "caption": "This comes third",
+    "date": "2023-12-18"
+  },
+  {
+    "username": "sushan4",
+    "email": "uchilsushan36@gmail.com",
+    "title": "test2",
+    "image": "nirmaan3.webp",
+    "caption": "This comes second",
+    "date": "2023-12-19"
+  },
+  {
+    "username": "sushan7",
+    "email": "abc@gmail.com",
+    "title": "Canadian conference",
+    "image": "DSCN3787_JPG.webp",
+    "caption": "This is a test post",
+    "date": "2023-12-20"
   }
 ]

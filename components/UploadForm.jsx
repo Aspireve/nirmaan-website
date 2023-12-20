@@ -1,14 +1,26 @@
-"use client";
+// "use client" (assuming this is not needed in your environment)
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const UploadForm = () => {
+  const getCurrentDate = () => {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, "0");
+    const day = String(today.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  };
+
+  // Set default value for date field
+  const defaultDate = getCurrentDate();
+
   const [formData, setFormData] = useState({
     username: "",
     email: "",
     title: "",
     image: null,
     caption: "",
+    date: defaultDate, // Set default date
   });
 
   const [successMessage, setSuccessMessage] = useState("");
@@ -32,6 +44,7 @@ const UploadForm = () => {
     formDataToSend.append("title", formData.title);
     formDataToSend.append("caption", formData.caption);
     formDataToSend.append("image", formData.image);
+    formDataToSend.append("date", formData.date); // Append date
 
     try {
       const response = await fetch("http://localhost:3002/api/upload", {
@@ -49,6 +62,7 @@ const UploadForm = () => {
           title: "",
           image: null,
           caption: "",
+          date: defaultDate, // Reset to default date
         });
 
         // Clear success message after a delay

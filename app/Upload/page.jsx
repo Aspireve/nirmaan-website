@@ -7,9 +7,10 @@ import UploadForm from "../../components/UploadForm";
 function page() {
   return (
     <>
-      <div className="w-screen h-full bg-[#1A232E]">
+      <div className="w-screen h-full bg-black">
         <Navbar />
         <UploadForm />
+
         <Footer />
       </div>
     </>

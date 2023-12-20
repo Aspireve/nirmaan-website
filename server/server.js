@@ -25,8 +25,8 @@ const upload = multer({ storage });
 // API endpoint for handling file uploads
 app.post("/api/upload", upload.single("image"), async (req, res) => {
   try {
-    // Access other form fields from req.body
-    const { username, email, title, caption } = req.body;
+    // Access other form fields from req.body, including the date
+    const { username, email, title, caption, date } = req.body;
 
     // Get the uploaded file information
     const { originalname: imageName, path: imagePath } = req.file;
@@ -38,6 +38,7 @@ app.post("/api/upload", upload.single("image"), async (req, res) => {
       title,
       image: `${imageName}`,
       caption,
+      date,
     };
     const postsPath = path.join(__dirname, "../public", "posts.json");
     const existingPosts = JSON.parse(await fs.readFile(postsPath, "utf-8"));
