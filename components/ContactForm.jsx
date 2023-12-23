@@ -56,7 +56,7 @@ function ContactForm(){
 
   return(
     <>    
-    <div className="text-white bg-[#1A232E]">
+    <div className="text-white bg-black">
       <div className="pt-10 px-6 text-6xl md:p-10 md:text-7xl mb-6 md:mb-0">Contact us</div>
       <div className="flex justify-evenly md:px-10 px-6 flex-wrap">
         <div className="flex-1 text-lg">

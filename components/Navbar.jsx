@@ -4,16 +4,22 @@ import styles from "../styles";
 import { navVariants } from "../utils/motion";
 import Link from "next/link";
 
-const Navbar = () => (
+
+
+
+
+const Navbar = () => {
+
+  return(
   <motion.nav
     variants={navVariants}
     initial="hidden"
     whileInView="show"
-    className={`${styles.xPaddings} py-8 relative bg-black`}
+    className={`${styles.xPaddings} py-8 relative `}
   >
     <div className="absolute w-[50%] inset-0 gradient-01" />
     <div
-      className={`${styles.innerWidth} mx-auto flex flex-col sm:flex-row justify-between gap-8 bg-black`}
+      className={`${styles.innerWidth} mx-auto flex flex-col sm:flex-row justify-between gap-8 `}
     >
       <img
         src="/search.svg"
@@ -21,16 +27,16 @@ const Navbar = () => (
         className="w-[24px] h-[24px] object-contain"
       />
 
-      <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
-        HOME
+      <h2 className="font-extrabold text-[24px] leading-[30px] text-white z-20" >
+        <Link href='/'>HOME</Link> 
       </h2>
 
-      <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
-        ABOUT
+      <h2 className="font-extrabold text-[24px] leading-[30px] text-white z-20">
+        <Link href='/About'>ABOUT</Link>
       </h2>
 
-      <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
-        TIMELINE
+      <h2 className="font-extrabold text-[24px] leading-[30px] text-white z-20">
+        <Link href='/Timeline'>TIMELINE</Link>
       </h2>
       <h2
         className="font-extrabold text-[24px] leading-[30px] text-white"
@@ -62,6 +68,6 @@ const Navbar = () => (
     </div>
     <br></br>
   </motion.nav>
-);
+)};
 
 export default Navbar;
