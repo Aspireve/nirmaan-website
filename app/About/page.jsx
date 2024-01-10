@@ -11,6 +11,10 @@ import {
   teamBattery,
   teamPropulsion,
   teamSoftwareLead,
+  teamElectronicsLead,
+  teamBatteryLead,
+  teamMechanicalLead,
+  teamPropulsionLead,
 } from "../../constants";
 import TeamMember from "../../components/Teammember";
 import StarsCanvas from "../../components/Starscanvas";
@@ -124,6 +128,11 @@ const page = () => {
           <h2 className="text-3xl font-semibold mb-8 text-white text-center">
             Electronics
           </h2>
+          <div className="flex flex-wrap -mx-4 mb-6 justify-center">
+            {teamElectronicsLead.map((member, index) => (
+              <TeamMember key={index} {...member} />
+            ))}
+          </div>
           <div className="flex flex-wrap -mx-4 mb-6">
             {teamElectronics.map((member, index) => (
               <TeamMember key={index} {...member} />
@@ -133,6 +142,11 @@ const page = () => {
           <h2 className="text-3xl font-semibold mb-8 text-white text-center">
             Propulsion
           </h2>
+          <div className="flex flex-wrap -mx-4 mb-6 justify-center">
+            {teamPropulsionLead.map((member, index) => (
+              <TeamMember key={index} {...member} />
+            ))}
+          </div>
           <div className="flex flex-wrap -mx-4 mb-6">
             {teamPropulsion.map((member, index) => (
               <TeamMember key={index} {...member} />
@@ -142,6 +156,11 @@ const page = () => {
           <h2 className="text-3xl font-semibold mb-8 text-white text-center">
             Battery
           </h2>
+          <div className="flex flex-wrap -mx-4 mb-6 justify-center">
+            {teamBatteryLead.map((member, index) => (
+              <TeamMember key={index} {...member} />
+            ))}
+          </div>
           <div className="flex flex-wrap -mx-4 mb-6">
             {teamBattery.map((member, index) => (
               <TeamMember key={index} {...member} />
@@ -151,6 +170,11 @@ const page = () => {
           <h2 className="text-3xl font-semibold mb-8 text-white text-center">
             Mechanical
           </h2>
+          <div className="flex flex-wrap -mx-4 mb-6 justify-center">
+            {teamMechanicalLead.map((member, index) => (
+              <TeamMember key={index} {...member} />
+            ))}
+          </div>
           <div className="flex flex-wrap -mx-4">
             {teamMechanical.map((member, index) => (
               <TeamMember key={index} {...member} />

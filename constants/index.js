@@ -267,7 +267,44 @@ export const teamMechanical = [
   },
 ];
 
+//Leads
 export const teamSoftwareLead = [
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+];
+
+export const teamElectronicsLead = [
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+];
+
+export const teamPropulsionLead = [
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+];
+
+export const teamBatteryLead = [
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+];
+
+export const teamMechanicalLead = [
   {
     name: "John Doe",
     position: "Software Engineer",
