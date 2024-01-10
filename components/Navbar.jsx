@@ -25,8 +25,11 @@ const Navbar = () => (
         HOME
       </h2>
 
-      <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
-        ABOUT
+      <h2
+        className="font-extrabold text-[24px] leading-[30px] text-white"
+        style={{ zIndex: 5 }}
+      >
+        <Link href="/About">ABOUT</Link>
       </h2>
 
       <h2 className="font-extrabold text-[24px] leading-[30px] text-white">

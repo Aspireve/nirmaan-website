@@ -89,3 +89,189 @@ export const socials = [
     url: "/facebook.svg",
   },
 ];
+
+export const teamMentors = [
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "profile.jpg",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+];
+
+export const teamLeads = [
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+];
+
+export const teamSoftware = [
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+];
+
+export const teamElectronics = [
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+];
+
+export const teamPropulsion = [
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+];
+
+export const teamBattery = [
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+];
+
+export const teamMechanical = [
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+];
+
+export const teamSoftwareLead = [
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+];
