@@ -41,12 +41,11 @@ const Feedback = () => (
         variants={fadeIn("left", "tween", 0.2, 1)}
         className="pt-15 relative flex-1 flex justify-center items-center bg-white bg-opacity-30 rounded-2xl "
       >
-        {/* <img
+        <img
           src="/pod1.png"
           alt="planet-09"
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-fill rounded-[40px]"
-        /> */}
-        <EarthCanvas />
+        />
       </motion.div>
     </motion.div>
   </section>
