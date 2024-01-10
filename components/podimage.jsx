@@ -91,8 +91,8 @@ const ImageTooltip = () => {
       <div className="w-1/2 relative">
         <div className="text-center">
           <img
-            src="podpage.png" // Replace with the path to your image
-            alt="Car Design"
+            src="podimage2.png" // Replace with the path to your image
+            alt="Pod"
             className="max-w-full max-h-full mx-auto"
           />
         </div>
