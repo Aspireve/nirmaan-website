@@ -111,13 +111,13 @@
 .glasseffect {
   background: linear-gradient(
     135deg,
-    rgba(82, 87, 92, 0.1),
-    rgba(74, 84, 94, 0)
+    rgba(72, 149, 212, 0.1),
+    rgba(64, 201, 194, 0)
   );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   /* border: 1px solid rgba(255, 255, 255, 0.18); */
-  box-shadow: 70px 0px 90px 0px rgba(58, 42, 54, 0.37);
+  box-shadow: 70px 0px 90px 0px rgba(45, 100, 105, 0.37);
 }
 
 input,

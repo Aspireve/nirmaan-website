@@ -1,12 +1,14 @@
 "use client";
 import { Navbar } from "../../components";
 import Footer from "../../components/Footer";
+import StarsCanvas from "../../components/Starscanvas";
 
 function page() {
   return (
     <>
-      <div className="w-screen h-full bg-[#1A232E]">
+      <div className="w-screen h-full bg-black">
         <Navbar />
+        <StarsCanvas/>
         <div className=" text-white">
           <div className="text-center text-6xl font-semibold mb-10">
             Our Sponsors
@@ -75,10 +77,10 @@ function page() {
                 </div>
               </div>
               <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div className="h-60 w-96">
+                <div className="h-60 w-96  flex items-center">
                   <img
-                    className="h-full w-full object-none transition-transform duration-500 group-hover:scale-125"
-                    src="altium.webp"
+                    className="h-auto  w-full transition-transform duration-500 group-hover:scale-125"
+                    src="Altium.jpg"
                     alt=""
                   />
                 </div>
@@ -194,7 +196,7 @@ function page() {
                 <div className="h-60 w-96">
                   <img
                     className="h-full w-full object-none transition-transform duration-500 group-hover:scale-125"
-                    src="ansys.webp"
+                    src="ansys.png"
                     alt=""
                   />
                 </div>
