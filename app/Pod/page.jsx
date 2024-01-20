@@ -1,8 +1,11 @@
+"use client";
 import React from "react";
 import { Navbar } from "../../components";
 import Footer from "../../components/Footer";
 import StarsCanvas from "../../components/Starscanvas";
 import ImageTooltip from "../../components/podimage";
+import ImageSlider from "../../components/ImageSlider";
+import Stats from "../../components/Stats";
 
 function Page() {
   return (
@@ -13,7 +16,7 @@ function Page() {
 
         <div className="flex justify-center mt-10">
           {/* Left container with video */}
-          <div className="relative w-1/2 rounded-xl overflow-hidden ml-6">
+          <div className="relative w-1/2 rounded-2xl overflow-hidden ml-6 transform scale-80">
             <video
               autoPlay
               loop
@@ -21,7 +24,7 @@ function Page() {
               playsInline
               className="w-full h-full object-cover"
             >
-              <source src="podvid2.mp4" type="video/mp4" />
+              <source src="podpage2.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -29,7 +32,7 @@ function Page() {
           {/* Right container with text */}
           <div className="w-1/2 p-8 relative">
             <div className="text-white">
-              <h2 className="text-3xl mb-4 font-semibold">
+              <h2 className="text-3xl mb-4 font-semibold mt-12">
                 Pushing the boundaries of innovation!
               </h2>
               <p className="text-lg italic">
@@ -65,7 +68,10 @@ function Page() {
         <div className="mt-10" id="podimage">
           <ImageTooltip />
         </div>
-
+        <div className="flex justify-center">
+          <ImageSlider />
+        </div>
+        <Stats />
         <Footer />
       </div>
     </>
