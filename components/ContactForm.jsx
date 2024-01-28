@@ -56,13 +56,13 @@ function ContactForm(){
 
   return(
     <>    
-    <div className="text-white bg-black">
-      <div className="pt-10 px-6 text-6xl md:p-10 md:text-7xl mb-6 md:mb-0">Contact us</div>
-      <div className="flex justify-evenly md:px-10 px-6 flex-wrap">
-        <div className="flex-1 text-lg">
-            <div className="flex"><img src="/email-48.png" alt="" className="w-16" /><a href="maito:contact@nirmaanhyperloop.com" className="m-3"> contact@nirmaanhyperloop.com</a></div>
-            <div className="flex mt-3"><img src="/phone-48.png" alt="" className="w-16 "/><a href="tel:+123456789"><div className="m-3">+123 456 789</div></a></div>
-           <div className="flex mt-3"><img src="/location-40.png" alt="" className="w-16 h-14 "/><div className="m-3">Thakur College Of Engineering And Technology.A-Block, Thakur
+    <div className="text-white bg-black ">
+      <div className="pt-10 px-6 text-6xl md:py-10 md:px-14  md:text-7xl mb-6 md:mb-0">Contact us</div>
+      <div className="flex xl:justify-evenly md:px-10 px-10 flex-wrap justify-center">
+        <div className="flex-1 text-lg ">
+            <div className="flex px-6"><img src="/email-48.png" alt="" className="w-16" /><a href="maito:contact@nirmaanhyperloop.com" className="m-3"> contact@nirmaanhyperloop.com</a></div>
+            <div className="flex mt-3 px-6"><img src="/phone-48.png" alt="" className="w-16 "/><a href="tel:+123456789"><div className="m-3">+123 456 789</div></a></div>
+           <div className="flex mt-3 px-6"><img src="/location-40.png" alt="" className="w-16 h-14 "/><div className="m-3">Thakur College Of Engineering And Technology.A-Block, Thakur
           Educational Campus, Shyamnarayan Thakur Marg, Thakur Village,
           Kandivali(E). Mumbai - 400101.</div></div>
           <div className="flex justify-center mt-6 w-[400px] md:w-[500px] px-10 mb-5"><GoogleMap/></div>
@@ -126,7 +126,7 @@ function ContactForm(){
               >
               </ToastContainer>
         </div>
-      </div>
+      </div> 
       </div>
         </>
     )

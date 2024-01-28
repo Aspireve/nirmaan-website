@@ -29,8 +29,14 @@ function page() {
   return (
     <div className="bg-black">
       <Navbar  />
-      <div className="flex justify-center text-white text-8xl mb-4">TIMELINE</div>
-      <VerticalTimeline lineColor={"#b9e4ed"}>
+      <div className="text-5xl flex justify-center font-semibold items-center pb-10 pt-5 text-white">
+            <div className="bg-purple-500 w-20 h-3"></div>
+            <div className="px-3">TIMELINE</div>
+            
+            <div className="bg-purple-500 w-20 h-3"></div>
+        </div>
+      <div className="px-8">
+      <VerticalTimeline lineColor={"#b9e4ed"} >
         <StarsCanvas/>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
@@ -89,6 +95,7 @@ function page() {
             > 
             </VerticalTimelineElement>
       </VerticalTimeline>
+      </div>
       <Footer/>
     </div>
   );
