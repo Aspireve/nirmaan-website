@@ -82,31 +82,54 @@ function Navbar() {
 
       {/* Mobile navigation links (only shown when open) */}
       {isOpen && (
-        <div className="md:hidden flex justify-center">
+        <motion.div
+          className="md:hidden flex justify-center"
+          variants={navVariants}
+          initial="hidden"
+          whileInView="show"
+        >
+          <div className="absolute w-[30%] h-[50%] inset-0 gradient-01" />
           <div
             className="mx-auto my-8 px-8 flex flex-col justify-center space-y-8 text-white text-24px leading-30px"
             style={{ zIndex: 5 }}
           >
-            <Link href="/" onClick={toggleMobileNav} style={{ zIndex: 5 }}>
+            <Link
+              href="/"
+              onClick={toggleMobileNav}
+              style={{ zIndex: 5 }}
+              className="font-semibold text-[20px] leading-[30px] text-white"
+            >
               HOME
             </Link>
-            <Link href="/About" onClick={toggleMobileNav} style={{ zIndex: 5 }}>
+            <Link
+              href="/About"
+              onClick={toggleMobileNav}
+              style={{ zIndex: 5 }}
+              className="font-semibold text-[20px] leading-[30px] text-white"
+            >
               ABOUT
             </Link>
             <Link
               href="/Timeline"
               onClick={toggleMobileNav}
               style={{ zIndex: 5 }}
+              className="font-semibold text-[20px] leading-[30px] text-white"
             >
               TIMELINE
             </Link>
-            <Link href="/Pod" onClick={toggleMobileNav} style={{ zIndex: 5 }}>
+            <Link
+              href="/Pod"
+              onClick={toggleMobileNav}
+              style={{ zIndex: 5 }}
+              className="font-semibold text-[20px] leading-[30px] text-white"
+            >
               THE POD
             </Link>
             <Link
               href="/Partners"
               onClick={toggleMobileNav}
               style={{ zIndex: 5 }}
+              className="font-semibold text-[20px] leading-[30px] text-white"
             >
               PARTNERS
             </Link>
@@ -114,11 +137,12 @@ function Navbar() {
               href="/Contact"
               onClick={toggleMobileNav}
               style={{ zIndex: 5 }}
+              className="font-semibold text-[20px] leading-[30px] text-white "
             >
               CONTACT
             </Link>
           </div>
-        </div>
+        </motion.div>
       )}
     </>
   );
