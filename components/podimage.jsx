@@ -76,14 +76,14 @@ const ImageTooltip = () => {
       {/* Left container for text */}
       <div className="w-1/2 p-8">
         <p className="text-lg text-white italic">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          placerat a magna non varius. Proin leo felis, euismod non porta eget,
-          varius sit amet sapien.
-        </p>
-        <p className="text-lg text-white italic">
-          Ut sagittis lacus consequat accumsan venenatis. Sed sollicitudin,
-          lectus et fringilla ultrices, dolor nisi scelerisque tortor, vel
-          finibus magna massa non nunc.
+          The Hyperloop seamlessly incorporates a range of critical components
+          to ensure its efficient operation as a groundbreaking transportation
+          system. These components encompass the aeroshell, which optimizes
+          aerodynamics, advanced control systems, battery packs equipped with
+          Battery Management Systems (BMS), robust frames ensuring structural
+          integrity, suspension systems for a smooth ride, and essential
+          elements such as Traction Linear Induction Motors (LIM) for
+          propulsion, along with efficient braking systems.
         </p>
         {/* Down arrow SVG centered after text */}
         <a href="#podslider">

@@ -6,7 +6,7 @@ export const exploreWorlds = [
   },
   {
     id: "world-2",
-    imgUrl: "/planet-02.png",
+    imgUrl: "/dom-electronics.jpeg",
     title: "Electronics",
   },
   {
@@ -16,12 +16,12 @@ export const exploreWorlds = [
   },
   {
     id: "world-4",
-    imgUrl: "/planet-04.png",
+    imgUrl: "/dom-aerodynamics.jpeg",
     title: "Aerodynamics",
   },
   {
     id: "world-5",
-    imgUrl: "/planet-05.png",
+    imgUrl: "/dom-business.jpeg",
     title: "Business",
   },
 ];

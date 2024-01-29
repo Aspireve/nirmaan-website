@@ -32,18 +32,21 @@ function Page() {
           {/* Right container with text */}
           <div className="w-1/2 p-8 relative">
             <div className="text-white">
-              <h2 className="text-3xl mb-4 font-semibold mt-12">
+              <h2 className="text-3xl mb-4 font-semibold mt-3">
                 Pushing the boundaries of innovation!
               </h2>
               <p className="text-lg italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                placerat a magna non varius. Proin leo felis, euismod non porta
-                eget, varius sit amet sapien.
+                Nirmaan Hyperloop stands at the forefront of innovation,
+                continually pushing boundaries in the realm of high-speed
+                transportation. With an unwavering commitment to advancing
+                technology, Nirmaan Hyperloop pioneers groundbreaking solutions
+                that redefine the future of transportation.
               </p>
               <p className="text-lg italic">
-                Ut sagittis lacus consequat accumsan venenatis. Sed
-                sollicitudin, lectus et fringilla ultrices, dolor nisi
-                scelerisque tortor, vel finibus magna massa non nunc.
+                Fueled by a passion for efficiency and sustainability, the team
+                tirelessly explores new horizons, ensuring that each stride
+                brings us closer to a transformative and futuristic
+                transportation landscape.
               </p>
             </div>
             {/* Down arrow SVG centered after text */}

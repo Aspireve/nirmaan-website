@@ -36,7 +36,7 @@ const WhatsNew = () => (
         <img
           src="/whats-new.png"
           alt="get-started"
-          style={{ width: "200%", height: "200%", objectFit: "contain" }}
+          className="w-full h-full object-contain"
         />
       </motion.div>
     </motion.div>
