@@ -10,9 +10,12 @@ function page() {
         <Navbar />
         <StarsCanvas/>
         <div className=" text-white">
-          <div className="text-center text-6xl font-semibold mb-10">
-            Our Sponsors
-          </div>
+        <div className="text-5xl flex justify-center font-semibold items-center pb-10 pt-5 text-white">
+            <div className="bg-purple-500 w-20 h-3"></div>
+            <div className="px-3">PARTNERS</div>
+            
+            <div className="bg-purple-500 w-20 h-3"></div>
+        </div>
           <div className="text-center px-16 mb-10 text-lg">
             We would like to thank our sponsors for their interest in our
             Nirmaan Hyperloop. Your contribution makes it possible to continue
@@ -122,7 +125,7 @@ function page() {
                   </a>
                 </div>
               </div>
-              <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+               <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
                 <div className="h-60 w-96">
                   <img
                     className="h-full w-full object-none transition-transform duration-500 group-hover:scale-125"
@@ -241,7 +244,7 @@ function page() {
                   </a>
                 </div>
               </div>
-              <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 col-start-2">
+             <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 md:col-start-2">
                 <div className="h-60 w-96">
                   <img
                     className="h-full w-full object-none transition-transform duration-500 group-hover:scale-125"
@@ -261,7 +264,7 @@ function page() {
                     See More
                   </button>
                 </div>
-              </div>
+              </div>  
             </div>
           </div>
         </div>

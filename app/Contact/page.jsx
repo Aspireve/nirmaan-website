@@ -8,8 +8,11 @@ function page() {
     <>
       <div className="bg-black">
         <Navbar />
-        <StarsCanvas/>
-        <ContactForm />
+        
+        <div className="z-0">
+        <StarsCanvas style={{zIndex:0}} />
+        </div>
+        <div className="z-50"><ContactForm /></div>
         <Footer />
       </div>
     </>

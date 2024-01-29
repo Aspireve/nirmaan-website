@@ -1,4 +1,5 @@
 import { Footer, Navbar } from "../components";
+import { Post } from "../components/Post";
 import StarsCanvas from "../components/Starscanvas";
 import {
   About,
@@ -32,6 +33,7 @@ const Page = () => (
       <Feedback />
     </div>
     <Footer />
+    
   </div>
 );
 
