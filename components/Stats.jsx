@@ -4,7 +4,7 @@ export const Stats = () => {
       <div class="grid grid-cols-2 row-gap-8 md:grid-cols-4">
         <div class="text-center md:border-r">
           <h6 class="text-4xl font-bold lg:text-5xl text-white xl:text-6xl">
-            200KG
+            180KG
           </h6>
           <p class="text-sm font-medium tracking-widest text-white uppercase lg:text-base">
             Pod Weight
@@ -12,7 +12,7 @@ export const Stats = () => {
         </div>
         <div class="text-center md:border-r">
           <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl text-white">
-            1000
+            170+
           </h6>
           <p class="text-sm font-medium tracking-widest text-white uppercase lg:text-base">
             Indiviual Parts
@@ -20,7 +20,7 @@ export const Stats = () => {
         </div>
         <div class="text-center md:border-r">
           <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl text-white">
-            50+
+            40+
           </h6>
           <p class="text-sm font-medium tracking-widest text-white uppercase lg:text-base">
             Team Members
@@ -28,7 +28,7 @@ export const Stats = () => {
         </div>
         <div class="text-center">
           <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl text-white">
-            10+
+            5+
           </h6>
           <p class="text-sm font-medium tracking-widest text-white uppercase lg:text-base">
             Competitions

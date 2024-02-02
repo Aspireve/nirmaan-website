@@ -13,7 +13,9 @@ import {
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
-    <Navbar />
+    <div style={{ zIndex: 5 }}>
+      <Navbar />
+    </div>
     <Hero />
     <div className="relative">
       <About />
@@ -33,7 +35,6 @@ const Page = () => (
       <Feedback />
     </div>
     <Footer />
-    
   </div>
 );
 

@@ -119,7 +119,7 @@ export const teamMentors = [
 
 export const teamLeads = [
   {
-    name: "John Doe",
+    name: "Upkar Chaurasiya",
     position: "Software Engineer",
     image: "profile.jpg",
     linkedin: "https://www.linkedin.com/in/johndoe",
@@ -134,22 +134,22 @@ export const teamLeads = [
 
 export const teamSoftware = [
   {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "profile.jpg",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    name: "Sanyam Jain",
+    position: "Software",
+    image: "team/Sanyam_Jain.jpg",
+    linkedin: "https://www.linkedin.com/in/sanyam-jain-350836233/",
   },
   {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "profile.jpg",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    name: "Ankit Maurya",
+    position: "Software",
+    image: "team/AnkitMaurya.jpg",
+    linkedin: "https://www.linkedin.com/in/ankit69",
   },
   {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "profile.jpg",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    name: "Steve Fernandes",
+    position: "Software",
+    image: "team/Steve_Fernandes.jpg",
+    linkedin: "https://www.linkedin.com/in/aspireve",
   },
   {
     name: "John Doe",
@@ -188,22 +188,22 @@ export const teamElectronics = [
 
 export const teamPropulsion = [
   {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "profile.jpg",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    name: "Aditya Poojary",
+    position: "Propulsion",
+    image: "team/Aditya_Poojary.jpg",
+    linkedin: "https://www.linkedin.com/in/aditya-poojary",
   },
   {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "profile.jpg",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    name: "Sourajeet Sahoo",
+    position: "Propulsion",
+    image: "team/Sahoo_Sourajeet.jpg",
+    linkedin: "https://www.linkedin.com/in/sahoo-sourajeet-29743025b",
   },
   {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "profile.jpg",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    name: "Avdhoot Bhatkar",
+    position: "Propulsion",
+    image: "team/Avdhoot_Bhatkar.jpg",
+    linkedin: "https://www.linkedin.com/in/avdhoot-m-bhatkar-7166992ab",
   },
   {
     name: "John Doe",
@@ -242,10 +242,16 @@ export const teamBattery = [
 
 export const teamMechanical = [
   {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "profile.jpg",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    name: "Narman Bannu J.",
+    position: "Mechanical",
+    image: "team/Narman_Mechanical.jpg",
+    linkedin: "https://www.linkedin.com/in/narman-bannu-j-45ba2724a",
+  },
+  {
+    name: "Akshita Singh",
+    position: "Mechanical",
+    image: "team/Akshita_Singh.jpg",
+    linkedin: "https://www.linkedin.com/in/akshita-singh-641142275",
   },
   {
     name: "John Doe",
@@ -258,6 +264,27 @@ export const teamMechanical = [
     position: "Software Engineer",
     image: "profile.jpg",
     linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+];
+
+export const teamCreatives = [
+  {
+    name: "Siddharth Prabhudesai",
+    position: "Creatives",
+    image: "team/Siddharth _Prabhudesai.jpg",
+    linkedin: "https://www.linkedin.com/in/siddharth-prabhudesai-895709254",
+  },
+  {
+    name: "Saumya Maheshwari",
+    position: "Creatives",
+    image: "team/Saumya_Maheshwari.jpg",
+    linkedin: "https://www.linkedin.com/in/saumya-maheshwari-4a8b9726b",
+  },
+  {
+    name: "Karishma Yadav",
+    position: "Creatives",
+    image: "team/Karishma_Yadav.jpeg",
+    linkedin: "https://www.linkedin.com/in/karishma-yadav-362b27282",
   },
   {
     name: "John Doe",
@@ -279,19 +306,19 @@ export const teamSoftwareLead = [
 
 export const teamElectronicsLead = [
   {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "profile.jpg",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    name: "Aditya Shandilya",
+    position: "Electronics",
+    image: "team/Aditya_Shandilya.jpeg",
+    linkedin: "www.linkedin.com/in/shandilya-aditya",
   },
 ];
 
 export const teamPropulsionLead = [
   {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "profile.jpg",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    name: "Anjanikumar Dubey",
+    position: "Propulsion",
+    image: "team/Anjanikumar-Dubey.jpg",
+    linkedin: "https://www.linkedin.com/in/anjanikumar-dubey/",
   },
 ];
 
@@ -305,6 +332,15 @@ export const teamBatteryLead = [
 ];
 
 export const teamMechanicalLead = [
+  {
+    name: "John Doe",
+    position: "Software Engineer",
+    image: "profile.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+];
+
+export const teamCreativesLead = [
   {
     name: "John Doe",
     position: "Software Engineer",

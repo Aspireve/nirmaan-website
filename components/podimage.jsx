@@ -5,7 +5,7 @@ import "./ImageTooltip.css";
 const ImageTooltip = () => {
   const tooltips = [
     {
-      top: "28%",
+      top: "30%",
       left: "55%",
       content: (
         <svg
@@ -13,7 +13,7 @@ const ImageTooltip = () => {
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          className="h-4 w-4"
+          className="h-2 w-2"
         >
           <path
             strokeLinecap="round"
@@ -23,18 +23,18 @@ const ImageTooltip = () => {
           />
         </svg>
       ),
-      additionalInfo: "Additional info for Tooltip 1",
+      additionalInfo: "Control Systems",
     },
     {
-      top: "45%",
-      right: "48%",
+      top: "31%",
+      right: "50%",
       content: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          className="h-4 w-4"
+          className="h-2 w-2"
         >
           <path
             strokeLinecap="round"
@@ -44,7 +44,7 @@ const ImageTooltip = () => {
           />
         </svg>
       ),
-      additionalInfo: "Additional info for Tooltip 2",
+      additionalInfo: "Battery Pack BMS",
     },
     {
       top: "65%",
@@ -55,7 +55,7 @@ const ImageTooltip = () => {
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          className="h-4 w-4"
+          className="h-2 w-2"
         >
           <path
             strokeLinecap="round"
@@ -65,7 +65,70 @@ const ImageTooltip = () => {
           />
         </svg>
       ),
-      additionalInfo: "Additional info for Tooltip 2",
+      additionalInfo: "Suspension",
+    },
+    {
+      top: "4%",
+      left: "26%",
+      content: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="h-2 w-2"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+          />
+        </svg>
+      ),
+      additionalInfo: "Aeroshell",
+    },
+    {
+      top: "43%",
+      right: "26%",
+      content: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="h-2 w-2"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+          />
+        </svg>
+      ),
+      additionalInfo: "Frames",
+    },
+    {
+      top: "63%",
+      right: "40%",
+      content: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="h-2 w-2"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+          />
+        </svg>
+      ),
+      additionalInfo: "Traction-L IM",
     },
   ];
 

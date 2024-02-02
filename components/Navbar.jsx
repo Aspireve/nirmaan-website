@@ -18,10 +18,12 @@ function Navbar() {
         initial="hidden"
         whileInView="show"
         className={`${styles.xPaddings} py-8 relative md:block hidden`}
+        style={{ zIndex: 5 }}
       >
         <div className="absolute w-[50%] inset-0 gradient-01" />
         <div
           className={`</span>{styles.innerWidth} mx-auto flex flex-col sm:flex-row justify-between gap-8`}
+          style={{ zIndex: 5 }}
         >
           <img
             src="/search.svg"
@@ -29,7 +31,10 @@ function Navbar() {
             className="w-[24px] h-[24px] object-contain"
           />
 
-          <h2 className="font-extrabold text-[24px] leading-[30px] text-white z-20">
+          <h2
+            className="font-extrabold text-[24px] leading-[30px] text-white z-20"
+            style={{ zIndex: 5 }}
+          >
             <Link href="/">HOME</Link>
           </h2>
 
@@ -40,7 +45,10 @@ function Navbar() {
             <Link href="/About">ABOUT</Link>
           </h2>
 
-          <h2 className="font-extrabold text-[24px] leading-[30px] text-white z-20">
+          <h2
+            className="font-extrabold text-[24px] leading-[30px] text-white z-20"
+            style={{ zIndex: 5 }}
+          >
             <Link href="/Timeline">TIMELINE</Link>
           </h2>
           <h2
@@ -53,7 +61,7 @@ function Navbar() {
             className="font-extrabold text-[24px] leading-[30px] text-white"
             style={{ zIndex: 5 }}
           >
-            <Link href="/Partners" style={{ zIndex: 3 }}>
+            <Link href="/Partners" style={{ zIndex: 5 }}>
               PARTNERS
             </Link>
           </h2>
@@ -61,7 +69,7 @@ function Navbar() {
             className="font-extrabold text-[24px] leading-[30px] text-white"
             style={{ zIndex: 5 }}
           >
-            <Link href="/Contact" style={{ zIndex: 4 }}>
+            <Link href="/Contact" style={{ zIndex: 5 }}>
               CONTACT
             </Link>
           </h2>
@@ -101,6 +109,7 @@ function Navbar() {
             >
               HOME
             </Link>
+
             <Link
               href="/About"
               onClick={toggleMobileNav}
@@ -109,6 +118,7 @@ function Navbar() {
             >
               ABOUT
             </Link>
+
             <Link
               href="/Timeline"
               onClick={toggleMobileNav}

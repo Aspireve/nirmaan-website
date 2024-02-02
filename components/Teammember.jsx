@@ -10,6 +10,7 @@ const TeamMember = ({ name, position, image, linkedin }) => {
           src={image} // Replace with actual image URL
           alt={name}
           className="w-full h-full object-cover transition-transform transform hover:scale-105 blur-[4px] duration-1000"
+          style={{ filter: "blur(0px)" }}
         />
 
         {/* Overlay with member information */}

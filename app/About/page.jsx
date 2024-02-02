@@ -15,13 +15,15 @@ import {
   teamBatteryLead,
   teamMechanicalLead,
   teamPropulsionLead,
+  teamCreativesLead,
+  teamCreatives,
 } from "../../constants";
 import TeamMember from "../../components/Teammember";
 import StarsCanvas from "../../components/Starscanvas";
 
 const page = () => {
   return (
-    <section className="bg-black">
+    <section className="bg-primary-black overflow-hidden">
       <Navbar />
       <StarsCanvas />
       {/*About section*/}
@@ -177,6 +179,20 @@ const page = () => {
           </div>
           <div className="flex flex-wrap -mx-4">
             {teamMechanical.map((member, index) => (
+              <TeamMember key={index} {...member} />
+            ))}
+          </div>
+
+          <h2 className="text-3xl font-semibold mb-8 text-white text-center">
+            Creatives
+          </h2>
+          <div className="flex flex-wrap -mx-4 mb-6 justify-center">
+            {teamCreativesLead.map((member, index) => (
+              <TeamMember key={index} {...member} />
+            ))}
+          </div>
+          <div className="flex flex-wrap -mx-4">
+            {teamCreatives.map((member, index) => (
               <TeamMember key={index} {...member} />
             ))}
           </div>

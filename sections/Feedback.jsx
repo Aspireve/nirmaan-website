@@ -43,8 +43,8 @@ const Feedback = () => (
       >
         <img
           src="/pod1.png"
-          alt="planet-09"
-          className="w-full lg:h-[610px] h-auto min-h-[210px] object-fill rounded-[40px]"
+          alt="nirmaan pod"
+          className="w-full lg:h-[610px] h-auto min-h-[210px] object-fill rounded-[50px]"
         />
       </motion.div>
     </motion.div>
