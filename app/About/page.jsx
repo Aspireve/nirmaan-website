@@ -17,15 +17,17 @@ import {
   teamPropulsionLead,
   teamCreativesLead,
   teamCreatives,
+  teamLeadstwo,
 } from "../../constants";
 import TeamMember from "../../components/Teammember";
 import StarsCanvas from "../../components/Starscanvas";
 
 const page = () => {
   return (
-    <section className="bg-primary-black overflow-hidden">
-      <Navbar />
+    <section className="w-screen h-full bg-black">
       <StarsCanvas />
+      <Navbar />
+
       {/*About section*/}
       <motion.section
         initial={{ opacity: 0, y: 50 }}
@@ -54,9 +56,9 @@ const page = () => {
               style={{ zIndex: 5 }}
             >
               <img
-                src="/teamabout.webp"
+                src="/teamabout.avif"
                 alt="About Us"
-                className="rounded-lg shadow-lg w-full"
+                className="rounded-lg shadow-lg w-full h-full"
                 style={{ zIndex: 5 }}
               />
             </motion.div>
@@ -100,6 +102,12 @@ const page = () => {
           </h2>
           <div className="flex flex-wrap -mx-4 mb-6 justify-center">
             {teamLeads.map((member, index) => (
+              <TeamMember key={index} {...member} />
+            ))}
+          </div>
+
+          <div className="flex flex-wrap -mx-4 mb-6 justify-center">
+            {teamLeadstwo.map((member, index) => (
               <TeamMember key={index} {...member} />
             ))}
           </div>

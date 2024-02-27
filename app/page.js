@@ -14,6 +14,7 @@ import {
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
     <div style={{ zIndex: 5 }}>
+      <StarsCanvas />
       <Navbar />
     </div>
     <Hero />
@@ -21,7 +22,6 @@ const Page = () => (
       <About />
       <div className="gradient-03 z-0" />
       <Explore />
-      <StarsCanvas />
     </div>
     <div className="relative">
       <GetStarted />

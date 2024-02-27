@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import styles from "../styles";
 import { slideIn, staggerContainer } from "../utils/motion";
 import { TitleText, TypingText } from "../components";
+import Link from "next/link";
 
 const Insights = () => {
   const [posts, setPosts] = useState([]);
@@ -61,12 +62,17 @@ const Insights = () => {
             className="flex flex-wrap justify-center items-center"
           >
             {posts.map((post, index) => (
-              <motion.div
+              <a
                 key={index}
-                variants={slideIn("up", "tween", 0.8, 1)}
-                className="w-full sm:w-1/2 md:w-1/3 p-4 mx-auto"
+                href={post.link}
+                className="w-full sm:w-1/2 md:w-1/3 p-4 mx-auto block"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <div className="relative overflow-hidden rounded-lg shadow-lg">
+                <motion.div
+                  variants={slideIn("up", "tween", 0.8, 1)}
+                  className="relative overflow-hidden rounded-lg shadow-lg"
+                >
                   <img
                     src={`/images/${post.image}`}
                     alt={post.title}
@@ -81,12 +87,17 @@ const Insights = () => {
                       {post.username}
                     </p>
                   </div>
-                </div>
-              </motion.div>
+                </motion.div>
+              </a>
             ))}
           </motion.div>
         )}
       </div>
+      <Link href="/Blog">
+        <div className="flex justify-center">
+          <TypingText title="View all our posts" />
+        </div>
+      </Link>
     </motion.section>
   );
 };

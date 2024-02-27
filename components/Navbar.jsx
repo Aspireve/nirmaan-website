@@ -26,9 +26,10 @@ function Navbar() {
           style={{ zIndex: 5 }}
         >
           <img
-            src="/search.svg"
+            // src="/search.svg"
+            src="/logo-nobg.png"
             alt="search"
-            className="w-[24px] h-[24px] object-contain"
+            className="w-[28px] h-[28px] object-contain"
           />
 
           <h2
@@ -77,7 +78,10 @@ function Navbar() {
       </motion.nav>
 
       {/* Mobile navigation icon & toggle */}
-      <div className="md:hidden flex justify-end items-center p-2">
+      <div
+        className="md:hidden flex justify-end items-center p-2"
+        style={{ zIndex: 5 }}
+      >
         <button
           onClick={toggleMobileNav}
           aria-label="Open navigation menu"
@@ -95,62 +99,69 @@ function Navbar() {
           variants={navVariants}
           initial="hidden"
           whileInView="show"
+          style={{ zIndex: 5 }}
         >
-          <div className="absolute w-[30%] h-[50%] inset-0 gradient-01" />
+          <div
+            className="absolute w-[30%] h-[50%] inset-0 gradient-01"
+            style={{ zIndex: 5 }}
+          />
           <div
             className="mx-auto my-8 px-8 flex flex-col justify-center space-y-8 text-white text-24px leading-30px"
             style={{ zIndex: 5 }}
           >
-            <Link
-              href="/"
-              onClick={toggleMobileNav}
+            <h2
+              className="font-extrabold text-[24px] leading-[30px] text-white z-20"
               style={{ zIndex: 5 }}
-              className="font-semibold text-[20px] leading-[30px] text-white"
             >
-              HOME
-            </Link>
+              <Link href="/">HOME</Link>
+            </h2>
 
-            <Link
-              href="/About"
-              onClick={toggleMobileNav}
+            <h2
+              className="font-extrabold text-[24px] leading-[30px] text-white"
               style={{ zIndex: 5 }}
-              className="font-semibold text-[20px] leading-[30px] text-white"
             >
-              ABOUT
-            </Link>
+              <Link href="/About" style={{ zIndex: 5 }}>
+                ABOUT
+              </Link>
+            </h2>
 
-            <Link
-              href="/Timeline"
-              onClick={toggleMobileNav}
+            <h2
+              className="font-extrabold text-[24px] leading-[30px] text-white"
               style={{ zIndex: 5 }}
-              className="font-semibold text-[20px] leading-[30px] text-white"
             >
-              TIMELINE
-            </Link>
-            <Link
-              href="/Pod"
-              onClick={toggleMobileNav}
+              <Link href="/Blog" style={{ zIndex: 5 }}>
+                BLOG
+              </Link>
+            </h2>
+
+            <h2
+              className="font-extrabold text-[24px] leading-[30px] text-white z-20"
               style={{ zIndex: 5 }}
-              className="font-semibold text-[20px] leading-[30px] text-white"
             >
-              THE POD
-            </Link>
-            <Link
-              href="/Partners"
-              onClick={toggleMobileNav}
+              <Link href="/Timeline">TIMELINE</Link>
+            </h2>
+            <h2
+              className="font-extrabold text-[24px] leading-[30px] text-white"
               style={{ zIndex: 5 }}
-              className="font-semibold text-[20px] leading-[30px] text-white"
             >
-              PARTNERS
-            </Link>
-            <Link
-              href="/Contact"
-              onClick={toggleMobileNav}
+              <Link href="/Pod">THE POD</Link>
+            </h2>
+            <h2
+              className="font-extrabold text-[24px] leading-[30px] text-white"
               style={{ zIndex: 5 }}
-              className="font-semibold text-[20px] leading-[30px] text-white "
             >
-              CONTACT
-            </Link>
+              <Link href="/Partners" style={{ zIndex: 5 }}>
+                PARTNERS
+              </Link>
+            </h2>
+            <h2
+              className="font-extrabold text-[24px] leading-[30px] text-white"
+              style={{ zIndex: 5 }}
+            >
+              <Link href="/Contact" style={{ zIndex: 5 }}>
+                CONTACT
+              </Link>
+            </h2>
           </div>
         </motion.div>
       )}

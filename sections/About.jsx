@@ -16,7 +16,7 @@ const About1 = () => {
         className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-black dark:bg-dark"
         style={{ zIndex: 5 }}
       >
-        <div className="container mx-auto">
+        <div className="container mx-auto" style={{ zIndex: 5 }}>
           <motion.div
             className="flex flex-wrap items-center justify-between -mx-4"
             variants={{
@@ -25,6 +25,7 @@ const About1 = () => {
             }}
             initial="hidden"
             animate={controls}
+            style={{ zIndex: 5 }}
           >
             <motion.div
               className="w-full px-4 lg:w-6/12"
@@ -50,7 +51,10 @@ const About1 = () => {
                     />
                   </div>
                 </div>
-                <div className="w-full px-3 sm:px-4 xl:w-1/2 ">
+                <div
+                  className="w-full px-3 sm:px-4 xl:w-1/2 "
+                  style={{ zIndex: 5 }}
+                >
                   <div className="relative z-10 my-4 mr-2 ">
                     <img
                       src="aboutimg3.jpeg"
@@ -638,9 +642,10 @@ const About1 = () => {
                 visible: { opacity: 1, x: 0 },
                 hidden: { opacity: 0, x: 50 },
               }}
+              style={{ zIndex: 5 }}
             >
               <div className="mt-5 lg:mt-0 ml-2" style={{ zIndex: 5 }}>
-                <h2 className="mb-5 text-3xl font-bold text-white dark:text-white sm:text-[40px]/[48px]">
+                <h2 className="mb-5 text-3xl font-bold text-white dark:text-white sm:text-[40px]/[48px] flex justify-center">
                   At Nirmaan, we Redefine Innovation.
                 </h2>
                 <p className="mb-5 text-base text-white dark:text-dark-6">
@@ -655,6 +660,15 @@ const About1 = () => {
                   possible.
                 </p>
               </div>
+              <motion.div className="flex justify-center" style={{ zIndex: 5 }}>
+                <a
+                  href="About"
+                  className="bg-white text-black font-bold py-2 px-6 rounded-full"
+                  style={{ zIndex: 5 }}
+                >
+                  <p style={{ zIndex: 5 }}></p>About Us
+                </a>
+              </motion.div>
             </motion.div>
           </motion.div>
         </div>

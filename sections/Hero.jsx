@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Hero = () => (
-  <section className="py-20 text-white bg-black" style={{ zIndex: 5 }}>
+  <section className="py-20 text-white bg-black">
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ const Hero = () => (
         possibilities.
       </motion.p>
 
-      <motion.div className="flex justify-center" style={{ zIndex: 5 }}>
+      <motion.div className="flex justify-center">
         <a
           href="#explore"
           className="bg-white text-black font-bold py-2 px-6 rounded-full"
