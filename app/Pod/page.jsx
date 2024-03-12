@@ -74,6 +74,9 @@ function Page() {
         <div className="flex justify-center">
           <ImageSlider />
         </div>
+        <div className="flex justify-center text-white">
+          <p className="text-sm italic">← Slide to view →</p>
+        </div>
         <Stats />
         <Footer />
       </div>

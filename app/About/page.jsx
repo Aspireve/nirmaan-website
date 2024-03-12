@@ -51,7 +51,7 @@ const page = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.2 }}
               className="md:w-1/2 lg:w-1/3 mb-4 md:mb-0 mr-4 ml-4"
               style={{ zIndex: 5 }}
             >
