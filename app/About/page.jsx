@@ -112,14 +112,14 @@ const page = () => {
             ))}
           </div>
 
-          <h2 className="text-3xl font-semibold mb-8 text-white text-center">
+          {/* <h2 className="text-3xl font-semibold mb-8 text-white text-center">
             Our Mentors
           </h2>
           <div className="flex flex-wrap -mx-4 mb-6">
             {teamMentors.map((member, index) => (
               <TeamMember key={index} {...member} />
             ))}
-          </div>
+          </div> */}
 
           <h2 className="text-3xl font-semibold mb-8 text-white text-center">
             Software
@@ -163,7 +163,7 @@ const page = () => {
             ))}
           </div>
 
-          <h2 className="text-3xl font-semibold mb-8 text-white text-center">
+          {/* <h2 className="text-3xl font-semibold mb-8 text-white text-center">
             Battery
           </h2>
           <div className="flex flex-wrap -mx-4 mb-6 justify-center">
@@ -175,7 +175,7 @@ const page = () => {
             {teamBattery.map((member, index) => (
               <TeamMember key={index} {...member} />
             ))}
-          </div>
+          </div> */}
 
           <h2 className="text-3xl font-semibold mb-8 text-white text-center">
             Mechanical

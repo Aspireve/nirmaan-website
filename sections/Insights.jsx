@@ -62,13 +62,7 @@ const Insights = () => {
             className="flex flex-wrap justify-center items-center"
           >
             {posts.map((post, index) => (
-              <a
-                key={index}
-                href={post.link}
-                className="w-full sm:w-1/2 md:w-1/3 p-4 mx-auto block"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <div className="w-full sm:w-1/2 md:w-1/3 p-4 mx-auto block">
                 <motion.div
                   variants={slideIn("up", "tween", 0.8, 1)}
                   className="relative overflow-hidden rounded-lg shadow-lg"
@@ -88,7 +82,7 @@ const Insights = () => {
                     </p>
                   </div>
                 </motion.div>
-              </a>
+              </div>
             ))}
           </motion.div>
         )}

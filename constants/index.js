@@ -26,12 +26,6 @@ export const exploreWorlds = [
   },
 ];
 
-export const startingFeatures = [
-  "Find a world that suits you and you want to enter",
-  "Enter the world by reading basmalah to be safe",
-  "No need to beat around the bush, just stay on the gas and have fun",
-];
-
 export const newFeatures = [
   {
     imgUrl: "/logo-nobg.png",
@@ -44,27 +38,6 @@ export const newFeatures = [
     title: "Engineering",
     subtitle:
       "As a group of dedicated engineers, we are firmly grounded in the relentless pursuit of excellence through top-tier engineering principles.",
-  },
-];
-
-export const insights = [
-  {
-    imgUrl: "/planet-06.png",
-    title: "The launch of the Metaverse makes Elon musk ketar-ketir",
-    subtitle:
-      "Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.",
-  },
-  {
-    imgUrl: "/planet-07.png",
-    title: "7 tips to easily master the madness of the Metaverse",
-    subtitle:
-      "Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum",
-  },
-  {
-    imgUrl: "/planet-08.png",
-    title: "With one platform you can explore the whole world virtually",
-    subtitle:
-      "Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem",
   },
 ];
 
@@ -144,12 +117,6 @@ export const teamLeadstwo = [
     position: "Vice Captain",
     image: "team/Aditya_Shandilya.jpeg",
     linkedin: "www.linkedin.com/in/shandilya-aditya",
-  },
-  {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "profile.jpg",
-    linkedin: "https://www.linkedin.com/in/johndoe",
   },
 ];
 
