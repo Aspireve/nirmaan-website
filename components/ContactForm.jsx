@@ -68,8 +68,13 @@ function ContactForm() {
             </div>
             <div className="flex mt-3 px-6">
               <img src="/phone-48.png" alt="" className="w-16 " />
-              <a href="tel:+123456789">
-                <div className="m-3">+123 456 789</div>
+
+              <a href="tel:+918355908284" style={{ zIndex: 5 }}>
+                <div className="m-3">+91 83559 08284</div>
+              </a>
+
+              <a href="tel:+919819941829" style={{ zIndex: 5 }}>
+                <div className="m-3">+91 98199 41829</div>
               </a>
             </div>
             <div className="flex mt-3 px-6">
@@ -80,7 +85,10 @@ function ContactForm() {
                 Kandivali(E). Mumbai - 400101.
               </div>
             </div>
-            <div className="flex justify-center mt-6 w-[400px] md:w-[500px] px-10 mb-5">
+            <div
+              className="flex justify-center mt-6 w-[400px] md:w-[500px] px-10 mb-5"
+              style={{ zIndex: 5 }}
+            >
               <GoogleMap />
             </div>
           </div>

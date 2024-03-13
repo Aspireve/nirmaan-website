@@ -45,7 +45,7 @@ export const socials = [
   {
     name: "twitter",
     url: "/twitter.svg",
-    link: "https://x.com/",
+    link: "https://twitter.com/nirmaanloop/",
   },
   {
     name: "linkedin",
@@ -56,10 +56,6 @@ export const socials = [
     name: "instagram",
     url: "/instagram.svg",
     link: "https://www.instagram.com/nirmaanhyperloop/",
-  },
-  {
-    name: "facebook",
-    url: "/facebook.svg",
   },
 ];
 
@@ -286,16 +282,16 @@ export const teamCreatives = [
 export const teamSoftwareLead = [
   {
     name: "Aditeya Prajapati",
-    position: "BE IT",
+    position: "Software Lead",
     image: "team/aditeya.jpg",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    linkedin: "https://www.linkedin.com/in/aditeya-prajapati-46b536232/",
   },
 ];
 
 export const teamElectronicsLead = [
   {
     name: "Aditya Shandilya",
-    position: "Electronics",
+    position: "Electronics Lead",
     image: "team/Aditya_Shandilya.jpeg",
     linkedin: "www.linkedin.com/in/shandilya-aditya",
   },
@@ -304,7 +300,7 @@ export const teamElectronicsLead = [
 export const teamPropulsionLead = [
   {
     name: "Anjanikumar Dubey",
-    position: "Propulsion",
+    position: "Propulsion Lead",
     image: "team/Anjanikumar-Dubey.jpg",
     linkedin: "https://www.linkedin.com/in/anjanikumar-dubey/",
   },
@@ -322,7 +318,7 @@ export const teamBatteryLead = [
 export const teamMechanicalLead = [
   {
     name: "Hrusheekesh Patil",
-    position: "BE-MECH",
+    position: "Mechanical Lead",
     image: "team/Hrusheekesh_Patil.jpg",
     linkedin: "https://www.linkedin.com/in/",
   },
