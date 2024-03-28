@@ -29,7 +29,7 @@ function Navbar() {
             // src="/search.svg"
             src="/logo-nobg.png"
             alt="search"
-            className="w-[28px] h-[28px] object-contain"
+            className="w-[28px] h-[28px] scale-[250%] object-contain"
           />
 
           <h2
