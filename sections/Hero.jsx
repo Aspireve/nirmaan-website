@@ -16,7 +16,7 @@ const Hero = () => (
         className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6"
         style={{ zIndex: 5 }}
       >
-        Implementing the Future with
+        Implementing the future with
       </motion.h1>
       <motion.h1
         className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8"
@@ -40,7 +40,7 @@ const Hero = () => (
           className="bg-white text-black font-bold py-2 px-6 rounded-full"
           style={{ zIndex: 5 }}
         >
-          Explore Now
+          Explore Domains
         </a>
       </motion.div>
     </motion.div>
