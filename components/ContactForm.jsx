@@ -67,14 +67,18 @@ function ContactForm() {
               </a>
             </div>
             <div className="flex mt-3 px-6">
-              <img src="/phone-48.png" alt="" className="w-16 " />
+              <img src="/phone-48.png" alt="" className="w-16 h-16" />
 
               <a href="tel:+918355908284" style={{ zIndex: 5 }}>
                 <div className="m-3">+91 83559 08284</div>
+                <div className="mx-3 -mt-2">Upkar Chaurasiya</div>
+                <div className="mx-3  text-sm">&#40;Team Leader&#41;</div>
               </a>
 
               <a href="tel:+919819941829" style={{ zIndex: 5 }}>
                 <div className="m-3">+91 98199 41829</div>
+                <div className="mx-3 -mt-2 ">Hardik Jain</div>
+                <div className="mx-3  text-sm">&#40;Team Manager&#41;</div>
               </a>
             </div>
             <div className="flex mt-3 px-6">
