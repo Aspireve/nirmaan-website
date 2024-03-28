@@ -94,6 +94,14 @@ export const teamLeads = [
     linkedin: "https://www.linkedin.com/in/upkar-chaurasiya-190509188/",
   },
 ];
+export const teamManager = [
+  {
+    name: "Hardik Jain",
+    position: "Team Manager",
+    image: "team/Hardik_Jain.PNG",
+    linkedin: "https://www.linkedin.com/in/hardik-jain-b76860248/",
+  },
+];
 
 export const teamLeadstwo = [
   {

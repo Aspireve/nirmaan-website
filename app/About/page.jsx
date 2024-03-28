@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import {
   teamMentors,
   teamLeads,
+  teamManager,
   teamSoftware,
   teamElectronics,
   teamMechanical,
@@ -102,6 +103,12 @@ const page = () => {
           </h2>
           <div className="flex flex-wrap -mx-4 mb-6 justify-center">
             {teamLeads.map((member, index) => (
+              <TeamMember key={index} {...member} />
+            ))}
+          </div>
+          
+          <div className="flex flex-wrap -mx-4 mb-6 justify-center">
+            {teamManager.map((member, index) => (
               <TeamMember key={index} {...member} />
             ))}
           </div>
