@@ -99,6 +99,15 @@ const page = () => {
       <div className="bg-black" id="team">
         <div className="container mx-auto py-16">
           <h2 className="text-3xl font-semibold mb-8 text-white text-center">
+              Our Mentors
+          </h2>
+          <div className="flex flex-wrap -mx-4 mb-6 justify-center">
+            {teamMentors.map((member, index) => (
+              <TeamMember key={index} {...member} />
+            ))}
+          </div>
+
+          <h2 className="text-3xl font-semibold mb-8 text-white text-center">
             Our Leads
           </h2>
           <div className="flex flex-wrap -mx-4 mb-6 justify-center">

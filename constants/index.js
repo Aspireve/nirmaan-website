@@ -61,27 +61,27 @@ export const socials = [
 
 export const teamMentors = [
   {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "profile.jpg",
+    name: "Dr.Neha Mishra",
+    position: "",
+    image: "mentors/Dr_Neha.png",
     linkedin: "https://www.linkedin.com/in/johndoe",
   },
   {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "profile.jpg",
+    name: "Dr.Hemant Kasturiwala",
+    position: "PhD in Electronics and Engineering",
+    image: "mentors/Dr_Hemant.jpg",
     linkedin: "https://www.linkedin.com/in/johndoe",
   },
   {
-    name: "John Doe",
-    position: "Software Engineer",
-    image: "profile.jpg",
+    name: "Mr.Iqbal Isaq Mujawar",
+    position: "M.E. in Mechanical-Thermal",
+    image: "mentors/Mr_Iqbal.jpg",
     linkedin: "https://www.linkedin.com/in/johndoe",
   },
   {
-    name: "profile.jpg",
-    position: "Software Engineer",
-    image: "profile.jpg",
+    name: "Mr.Pankaj Rawool ",
+    position: "M.TECH in Machine Design",
+    image: "mentors/Mr_Pankaj.jpg",
     linkedin: "https://www.linkedin.com/in/johndoe",
   },
 ];
