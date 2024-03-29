@@ -98,7 +98,7 @@ export const teamManager = [
   {
     name: "Hardik Jain",
     position: "Team Manager",
-    image: "team/Hardik_Jain.PNG",
+    image: "team/Hardik_Jain.webp",
     linkedin: "https://www.linkedin.com/in/hardik-jain-b76860248/",
   },
 ];
