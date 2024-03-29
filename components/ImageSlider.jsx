@@ -8,7 +8,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="relative w-3/5 h-3/5 overflow-hidden">
+    <div className="relative md:w-3/5 md:h-3/5 overflow-hidden">
       {/* Base Image */}
       <img
         src="sliderimage1-new.png"

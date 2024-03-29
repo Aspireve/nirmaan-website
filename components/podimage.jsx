@@ -135,9 +135,40 @@ const ImageTooltip = () => {
   const [activeTooltip, setActiveTooltip] = useState(null);
 
   return (
-    <div className="flex items-center justify-center h-screen overflow-hidden relative">
+    <div className="md:flex items-center justify-center h-screen overflow-hidden relative">
+      <div className=" scale-105 relative md:hidden">
+        <div className="text-center">
+          <img
+            src="podimage2.png" // Replace with the path to your image
+            alt="Pod"
+            className="max-w-full max-h-full mx-auto"
+          />
+        </div>
+        {tooltips.map((tooltip, index) => (
+          <div
+            key={index}
+            className={`tooltip ${activeTooltip === index ? "active" : ""}`}
+            style={{
+              top: tooltip.top,
+              right: tooltip.right,
+              bottom: tooltip.bottom,
+              left: tooltip.left,
+            }}
+            onMouseEnter={() => setActiveTooltip(index)}
+            onMouseLeave={() => setActiveTooltip(null)}
+          >
+            <div className="tooltip-content">{tooltip.content}</div>
+            {activeTooltip === index && (
+              <div className="additional-info absolute bg-white p-2 border rounded-md">
+                <p>{tooltip.additionalInfo}</p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
       {/* Left container for text */}
-      <div className="w-1/2 p-8">
+      <div className="md:w-1/2 md:p-8 p-4 ">
         <p className="text-lg text-white italic">
           The Hyperloop seamlessly incorporates a range of critical components
           to ensure its efficient operation as a groundbreaking transportation
@@ -155,7 +186,7 @@ const ImageTooltip = () => {
             fill="none"
             viewBox="0 0 24 24"
             stroke="white"
-            className="absolute bottom-7 left-1/2 transform -translate-x-1/2 w-6 h-6"
+            className="absolute md:bottom-7 left-1/2 transform -translate-x-1/2 w-6 h-6"
           >
             <path
               strokeLinecap="round"

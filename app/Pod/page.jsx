@@ -14,9 +14,9 @@ function Page() {
         <StarsCanvas />
         <Navbar />
 
-        <div className="flex justify-center mt-10">
+        <div className="md:flex justify-center mt-10">
           {/* Left container with video */}
-          <div className="relative w-1/2 rounded-2xl overflow-hidden ml-6 transform scale-80">
+          <div className="m-4 md:relative md:w-1/2 rounded-2xl overflow-hidden md:ml-6 transform md:scale-80">
             <video
               autoPlay
               loop
@@ -29,8 +29,8 @@ function Page() {
             </video>
           </div>
 
-          {/* Right container with text */}
-          <div className="w-1/2 p-8 relative">
+          {/* Right container with text   */}
+          <div className="md:w-1/2 p-4 md:p-8 relative">
             <div className="text-white">
               <h2 className="text-3xl mb-4 font-semibold mt-3">
                 Pushing the boundaries of innovation!
@@ -56,7 +56,7 @@ function Page() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="white"
-                className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-6 h-6"
+                className="absolute md:bottom-4 left-1/2 transform -translate-x-1/2 w-6 h-6 "
               >
                 <path
                   strokeLinecap="round"
