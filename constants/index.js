@@ -61,15 +61,9 @@ export const socials = [
 
 export const teamMentors = [
   {
-    name: "Dr.Neha Mishra",
-    position: "PhD in Chemistry",
-    image: "mentors/Dr_Neha.png",
-    linkedin: "https://www.linkedin.com/in/johndoe",
-  },
-  {
-    name: "Dr.Hemant Kasturiwala",
-    position: "PhD in Electronics and Engineering",
-    image: "mentors/Dr_Hemant.jpg",
+    name: "Mr.Pankaj Rawool ",
+    position: "M.TECH in Machine Design",
+    image: "mentors/Mr_Pankaj.jpg",
     linkedin: "https://www.linkedin.com/in/johndoe",
   },
   {
@@ -79,9 +73,15 @@ export const teamMentors = [
     linkedin: "https://www.linkedin.com/in/johndoe",
   },
   {
-    name: "Mr.Pankaj Rawool ",
-    position: "M.TECH in Machine Design",
-    image: "mentors/Mr_Pankaj.jpg",
+    name: "Dr.Hemant Kasturiwala",
+    position: "PhD in Electronics and Engineering",
+    image: "mentors/Dr_Hemant.jpg",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
+  {
+    name: "Dr.Neha Mishra",
+    position: "PhD in Chemistry",
+    image: "mentors/Dr_Neha.png",
     linkedin: "https://www.linkedin.com/in/johndoe",
   },
 ];
@@ -240,6 +240,12 @@ export const teamElectronics = [
     image: "team/Ankit_Tejam.jpg",
     linkedin: "https://www.linkedin.com/in/johndoe",
   },
+  {
+    name: "Pradyuman Sharma",
+    position: "Electronics",
+    image: "team/Pradyumne_Sharma.png",
+    linkedin: "https://www.linkedin.com/in/johndoe",
+  },
 ];
 
 export const teamPropulsion = [
@@ -298,9 +304,15 @@ export const teamBattery = [
 
 export const teamMechanical = [
   {
+    name: "Hardik Jain",
+    position: "Team Manager",
+    image: "team/Hardik_Jain.webp",
+    linkedin: "https://www.linkedin.com/in/hardik-jain-b76860248/",
+  },
+  {
     name: "Narman Bannu J.",
     position: "Mechanical",
-    image: "team/Narman_Mechanical.jpg",
+    image: "team/Narman.png",
     linkedin: "https://www.linkedin.com/in/narman-bannu-j-45ba2724a",
   },
   {
