@@ -19,6 +19,7 @@ import {
   teamCreativesLead,
   teamCreatives,
   teamLeadstwo,
+  teamPrev,
 } from "../../constants";
 import TeamMember from "../../components/Teammember";
 import StarsCanvas from "../../components/Starscanvas";
@@ -106,6 +107,16 @@ const page = () => {
               <TeamMember key={index} {...member} />
             ))}
           </div>
+
+          <h2 className="text-3xl font-semibold mb-8 text-white text-center">
+              Previous Members
+          </h2>
+          <div className="flex flex-wrap -mx-4 mb-6 justify-center">
+            {teamPrev.map((member, index) => (
+              <TeamMember key={index} {...member} />
+            ))}
+          </div>
+            
 
           <h2 className="text-3xl font-semibold mb-8 text-white text-center">
             Our Leads

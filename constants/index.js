@@ -62,7 +62,7 @@ export const socials = [
 export const teamMentors = [
   {
     name: "Dr.Neha Mishra",
-    position: "",
+    position: "PhD in Chemistry",
     image: "mentors/Dr_Neha.png",
     linkedin: "https://www.linkedin.com/in/johndoe",
   },
@@ -85,6 +85,58 @@ export const teamMentors = [
     linkedin: "https://www.linkedin.com/in/johndoe",
   },
 ];
+
+export const teamPrev =[
+  {
+    name: "Tejas Sharma",
+    position: "Founder",
+    image: "prevmem/Tejas_Sharma.jpg",
+    linkedin: "https://www.linkedin.com/in/",
+  },
+  {
+    name: "Ayush Agarwal",
+    position: "Ex Team Lead",
+    image: "prevmem/Ayush_Agarwal.png",
+    linkedin: "https://www.linkedin.com/in/",
+  },
+  {
+    name: "Amir Mehsaniya",
+    position: "Ex Team Manager",
+    image: "prevmem/Amir_Mehsaniya.jpg",
+    linkedin: "https://www.linkedin.com/in/",
+  },
+  {
+    name:"Anam Ansari",
+    position:"Ex Software Lead",
+    image:"prevmem/Anam_Ansari.png",
+    linkedin:"https://www.linkedin.com/in/",
+  },
+  {
+    name: "Anand Pasi",
+    position: "Ex Power Electronics Lead",
+    image: "prevmem/Anand_Pasi.png",
+    linkedin: "https://www.linkedin.com/in/",
+  },
+  {
+    name: "Harsh Kudtarkar",
+    position: "Ex Electronics Lead",
+    image: "prevmem/Harsh_Kudtarkar.png",
+    linkedin: "https://www.linkedin.com/in/",
+  },
+  {
+    name: "Suditi Kuperkar",
+    position: "Ex Propulsion Lead",
+    image: "prevmem/Suditi_Kuperkar.png",
+    linkedin: "https://www.linkedin.com/in/",
+  },
+  {
+    name: "Vaibhav Uday Rane",
+    position: "Mentor",
+    image: "prevmem/Vaibhav_Rane.jpg", 
+    linkedin: "https://www.linkedin.com/in/",
+  }
+ 
+]
 
 export const teamLeads = [
   {
