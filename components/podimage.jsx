@@ -199,7 +199,7 @@ const ImageTooltip = () => {
       </div>
 
       {/* Right container for image and tooltips */}
-      <div className="w-1/2 relative">
+      <div className="w-1/2 relative hidden md:block">
         <div className="text-center">
           <img
             src="podimage2.png" // Replace with the path to your image
