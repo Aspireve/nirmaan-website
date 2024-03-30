@@ -213,6 +213,12 @@ export const teamSoftware = [
     image: "team/Jyestha_Patil.jpg",
     linkedin: "https://www.linkedin.com/in/",
   },
+  {
+    name:"Aman Prajapati",
+    position:"Software",
+    image:"team/Aman_Prajapati.png",
+    linkedin:"https://www.linkedin.com/in/aman-prajapati-416364289/",
+  }
 ];
 
 export const teamElectronics = [
@@ -325,10 +331,10 @@ export const teamCreatives = [
     linkedin: "https://www.linkedin.com/in/siddharth-prabhudesai-895709254",
   },
   {
-    name: "Saumya Maheshwari",
+    name: "Ankur Saroj",
     position: "Creatives",
-    image: "team/Saumya_Maheshwari.jpg",
-    linkedin: "https://www.linkedin.com/in/saumya-maheshwari-4a8b9726b",
+    image: "team/Ankur_Saroj.png",
+    linkedin: "https://www.linkedin.com/in/",
   },
   {
     name: "Karishma Yadav",
