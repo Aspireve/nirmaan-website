@@ -64,25 +64,25 @@ export const teamMentors = [
     name: "Mr.Pankaj Rawool ",
     position: "M.TECH in Machine Design",
     image: "mentors/Mr_Pankaj.jpg",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    linkedin: "https://www.linkedin.com/in/pankaj-rawool-b69ba4b5/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Mr.Iqbal Isaq Mujawar",
     position: "M.E. in Mechanical-Thermal",
     image: "mentors/Mr_Iqbal.jpg",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    linkedin: "https://www.linkedin.com/in/iqbal-mujawar-80342533/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Dr.Hemant Kasturiwala",
     position: "PhD in Electronics and Engineering",
     image: "mentors/Dr_Hemant.jpg",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    linkedin: "https://www.linkedin.com/in/dr-hemant-kasturiwale-jain-5274b319/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Dr.Neha Mishra",
     position: "PhD in Chemistry",
     image: "mentors/Dr_Neha.png",
-    linkedin: "https://www.linkedin.com/in/johndoe",
+    linkedin: "https://www.linkedin.com/in/dr-neha-mishra-a8590173/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
 
