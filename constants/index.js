@@ -142,7 +142,7 @@ export const teamLeads = [
   {
     name: "Upkar Chaurasiya",
     position: "Team Lead",
-    image: "team/Upkar_Chaurasiya.JPG",
+    image: "team/Upkar_Chaurasiya.webp",
     linkedin: "https://www.linkedin.com/in/upkar-chaurasiya-190509188/",
   },
 ];
@@ -171,7 +171,7 @@ export const teamLeadstwo = [
   {
     name: "Aditya Shandilya",
     position: "Vice Captain",
-    image: "team/Aditya_Shandilya.jpeg",
+    image: "team/Aditya_Shandilya.jpg",
     linkedin: "www.linkedin.com/in/shandilya-aditya",
   },
 ];
@@ -370,7 +370,7 @@ export const teamElectronicsLead = [
   {
     name: "Aditya Shandilya",
     position: "Electronics Lead",
-    image: "team/Aditya_Shandilya.jpeg",
+    image: "team/Aditya_Shandilya.jpg",
     linkedin: "www.linkedin.com/in/shandilya-aditya",
   },
 ];
