@@ -11,7 +11,7 @@ function Navbar() {
   const toggleMobileNav = () => setIsOpen(!isOpen);
 
   return (
-    <>
+    <><>
       {/* Original desktop navbar (unchanged) */}
       <motion.nav
         variants={navVariants}
@@ -165,7 +165,7 @@ function Navbar() {
           </div>
         </motion.div>
       )}
-    </>
+    </> <marquee className="text-white text-xl underline" onClick={()=>window.location.href="https://drive.google.com/file/d/19h42fQqRFqE7XuB-liZHtZ8MhdMHQI8w/"}>Click here to view our Research Paper</marquee> </>
   );
 }
 
