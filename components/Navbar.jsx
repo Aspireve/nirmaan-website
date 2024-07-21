@@ -11,7 +11,7 @@ function Navbar() {
   const toggleMobileNav = () => setIsOpen(!isOpen);
 
   return (
-    <>
+    <><>
       {/* Original desktop navbar (unchanged) */}
       <motion.nav
         variants={navVariants}
