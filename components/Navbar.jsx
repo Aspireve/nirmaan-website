@@ -11,7 +11,7 @@ function Navbar() {
   const toggleMobileNav = () => setIsOpen(!isOpen);
 
   return (
-    <><>
+    <>
       {/* Original desktop navbar (unchanged) */}
       <motion.nav
         variants={navVariants}
@@ -60,14 +60,14 @@ function Navbar() {
           >
             <Link href="/Pod">THE POD</Link>
           </h2>
-          <h2
+          {/* <h2
             className="text-2xl leading-[30px] text-white"
             style={{ zIndex: 5 }}
           >
             <Link href="https://drive.google.com/file/d/19h42fQqRFqE7XuB-liZHtZ8MhdMHQI8w/edit">
               RESEARCH
             </Link>
-          </h2>
+          </h2> */}
           <h2
             className="text-2xl leading-[30px] text-white"
             style={{ zIndex: 5 }}
@@ -160,9 +160,9 @@ function Navbar() {
               className="text-2xl leading-[30px] text-white"
               style={{ zIndex: 5 }}
             >
-              <Link href="https://drive.google.com/file/d/19h42fQqRFqE7XuB-liZHtZ8MhdMHQI8w/edit">
+              {/* <Link href="https://drive.google.com/file/d/19h42fQqRFqE7XuB-liZHtZ8MhdMHQI8w/edit">
                 RESEARCH
-              </Link>
+              </Link> */}
             </h2>
             <h2
               className="text-2xl leading-[30px] text-white"
@@ -183,7 +183,7 @@ function Navbar() {
           </div>
         </motion.div>
       )}
-       <marquee className="text-white text-xl underline" onClick={()=>window.location.href="https://drive.google.com/file/d/19h42fQqRFqE7XuB-liZHtZ8MhdMHQI8w/"}>Click here to view our Research Paper</marquee> 
+       <marquee className="text-white text-xl underline cursor-pointer" onClick={()=>window.location.href="https://drive.google.com/file/d/19h42fQqRFqE7XuB-liZHtZ8MhdMHQI8w/"}>Click here to view our Research Paper</marquee> 
     </>
   );
 }
