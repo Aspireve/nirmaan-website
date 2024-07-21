@@ -160,6 +160,14 @@ function Navbar() {
               className="text-2xl leading-[30px] text-white"
               style={{ zIndex: 5 }}
             >
+              <Link href="https://drive.google.com/file/d/19h42fQqRFqE7XuB-liZHtZ8MhdMHQI8w/edit">
+                RESEARCH
+              </Link>
+            </h2>
+            <h2
+              className="text-2xl leading-[30px] text-white"
+              style={{ zIndex: 5 }}
+            >
               <Link href="/Partners" style={{ zIndex: 5 }}>
                 PARTNERS
               </Link>
