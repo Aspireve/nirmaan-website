@@ -18,9 +18,11 @@ function Navbar() {
         initial="hidden"
         whileInView="show"
         className={`${styles.xPaddings} py-8 relative md:block hidden`}
-        style={{ zIndex: 5 }}
+        style={{
+          zIndex: 5,
+        }}
       >
-        <div className="absolute w-[50%] inset-0 gradient-01" />
+        {/* <div className="absolute w-[50%] inset-0 gradient-01" /> */}
         <div
           className={`</span>{styles.innerWidth} mx-auto flex flex-col sm:flex-row justify-between gap-8`}
           style={{ zIndex: 5 }}
@@ -33,33 +35,41 @@ function Navbar() {
           />
 
           <h2
-            className="font-extrabold text-[24px] leading-[30px] text-white z-20"
+            className="text-2xl leading-[30px] text-white z-20"
             style={{ zIndex: 5 }}
           >
             <Link href="/">HOME</Link>
           </h2>
 
           <h2
-            className="font-extrabold text-[24px] leading-[30px] text-white"
+            className="text-2xl leading-[30px] text-white"
             style={{ zIndex: 5 }}
           >
-            <Link href="/About">ABOUT</Link>
+            <Link href="/About">TEAM</Link>
           </h2>
 
           <h2
-            className="font-extrabold text-[24px] leading-[30px] text-white z-20"
+            className="text-2xl leading-[30px] text-white z-20"
             style={{ zIndex: 5 }}
           >
             <Link href="/Timeline">TIMELINE</Link>
           </h2>
           <h2
-            className="font-extrabold text-[24px] leading-[30px] text-white"
+            className="text-2xl leading-[30px] text-white"
             style={{ zIndex: 5 }}
           >
             <Link href="/Pod">THE POD</Link>
           </h2>
           <h2
-            className="font-extrabold text-[24px] leading-[30px] text-white"
+            className="text-2xl leading-[30px] text-white"
+            style={{ zIndex: 5 }}
+          >
+            <Link href="https://drive.google.com/file/d/19h42fQqRFqE7XuB-liZHtZ8MhdMHQI8w/edit">
+              RESEARCH
+            </Link>
+          </h2>
+          <h2
+            className="text-2xl leading-[30px] text-white"
             style={{ zIndex: 5 }}
           >
             <Link href="/Partners" style={{ zIndex: 5 }}>
@@ -67,7 +77,7 @@ function Navbar() {
             </Link>
           </h2>
           <h2
-            className="font-extrabold text-[24px] leading-[30px] text-white"
+            className="text-2xl leading-[30px] text-white"
             style={{ zIndex: 5 }}
           >
             <Link href="/Contact" style={{ zIndex: 5 }}>
@@ -110,14 +120,14 @@ function Navbar() {
             style={{ zIndex: 5 }}
           >
             <h2
-              className="font-extrabold text-[24px] leading-[30px] text-white z-20"
+              className="text-2xl leading-[30px] text-white z-20"
               style={{ zIndex: 5 }}
             >
               <Link href="/">HOME</Link>
             </h2>
 
             <h2
-              className="font-extrabold text-[24px] leading-[30px] text-white"
+              className="text-2xl leading-[30px] text-white"
               style={{ zIndex: 5 }}
             >
               <Link href="/About" style={{ zIndex: 5 }}>
@@ -126,7 +136,7 @@ function Navbar() {
             </h2>
 
             <h2
-              className="font-extrabold text-[24px] leading-[30px] text-white"
+              className="text-2xl leading-[30px] text-white"
               style={{ zIndex: 5 }}
             >
               <Link href="/Blog" style={{ zIndex: 5 }}>
@@ -135,19 +145,19 @@ function Navbar() {
             </h2>
 
             <h2
-              className="font-extrabold text-[24px] leading-[30px] text-white z-20"
+              className="text-2xl leading-[30px] text-white z-20"
               style={{ zIndex: 5 }}
             >
               <Link href="/Timeline">TIMELINE</Link>
             </h2>
             <h2
-              className="font-extrabold text-[24px] leading-[30px] text-white"
+              className="text-2xl leading-[30px] text-white"
               style={{ zIndex: 5 }}
             >
               <Link href="/Pod">THE POD</Link>
             </h2>
             <h2
-              className="font-extrabold text-[24px] leading-[30px] text-white"
+              className="text-2xl leading-[30px] text-white"
               style={{ zIndex: 5 }}
             >
               <Link href="/Partners" style={{ zIndex: 5 }}>
@@ -155,7 +165,7 @@ function Navbar() {
               </Link>
             </h2>
             <h2
-              className="font-extrabold text-[24px] leading-[30px] text-white"
+              className="text-2xl leading-[30px] text-white"
               style={{ zIndex: 5 }}
             >
               <Link href="/Contact" style={{ zIndex: 5 }}>

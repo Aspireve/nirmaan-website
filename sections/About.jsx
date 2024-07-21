@@ -666,7 +666,7 @@ const About1 = () => {
                   className="bg-white text-black font-bold py-2 px-6 rounded-full"
                   style={{ zIndex: 5 }}
                 >
-                  <p style={{ zIndex: 5 }}></p>About Us
+                  <p style={{ zIndex: 5 }}></p>Our Team
                 </a>
               </motion.div>
             </motion.div>
