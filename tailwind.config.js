@@ -9,6 +9,17 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      fontFamily: {
+        sans: [
+          '"DM Sans"',
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "sans-serif",
+        ],
+      },
       colors: {
         "primary-black": "#000000",
         "secondary-white": "#c7c7c7",
