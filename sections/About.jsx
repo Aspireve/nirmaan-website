@@ -689,59 +689,63 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import  WobbleCard  from "../components/ui/wobble-card";
+import WobbleCard from "./WobbleCard";
+// import  WobbleCard  from "../components/ui/wobble-card";
 
 
  function About() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
-      <WobbleCard
-        containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
-        className=""
-      >
-        <div className="max-w-xs">
-          <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-          Innovation
-          </h2>
-          <p className="mt-4 text-left text-base/6 text-neutral-200">
-          At Nirmaan, we are on an unending journey to redefine innovation, continually pushing the boundaries day in, day out, to create a brighter future.
-          </p>
-        </div>
-        <Image
-          src="/aboutimg1.jpg"
-          width={500}
-          height={500}
-          alt="linear demo image"
-          className="absolute -right-10 -bottom-10 lg:-right-[15%] md:-right-[40%]  object-cover rounded-2xl"
-        />
-      </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 min-h-[300px]">
-        <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-        Engineering
-        </h2>
-        <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
-        As a group of dedicated engineers, we are firmly grounded in the relentless pursuit of excellence through top-tier engineering principles.
-        </p>
-      </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
-        <div className="max-w-sm">
-          <h2 className="max-w-sm md:max-w-lg text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            At Nirmaan, we Redefine Innovation.
-          </h2>
-          <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
-            We at,Nirmaan Hyperloop, aim to develop and innovate new modes of transport. Founded in 2018, now a team of 40 creative minds from various engineering domains, Nirmaan Hyperloop aimed to build a Globally recognizable Hyperloop pod.
+    // <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+    //   <WobbleCard
+    //     containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+    //     className=""
+    //   >
+    //     <div className="max-w-xs">
+    //       <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+    //       Innovation
+    //       </h2>
+    //       <p className="mt-4 text-left text-base/6 text-neutral-200">
+    //       At Nirmaan, we are on an unending journey to redefine innovation, continually pushing the boundaries day in, day out, to create a brighter future.
+    //       </p>
+    //     </div>
+    //     <Image
+    //       src="/aboutimg1.jpg"
+    //       width={500}
+    //       height={500}
+    //       alt="linear demo image"
+    //       className="absolute -right-10 -bottom-10 lg:-right-[15%] md:-right-[40%]  object-cover rounded-2xl"
+    //     />
+    //   </WobbleCard>
+    //   <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+    //     <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+    //     Engineering
+    //     </h2>
+    //     <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+    //     As a group of dedicated engineers, we are firmly grounded in the relentless pursuit of excellence through top-tier engineering principles.
+    //     </p>
+    //   </WobbleCard>
+    //   <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+    //     <div className="max-w-sm">
+    //       <h2 className="max-w-sm md:max-w-lg text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+    //         At Nirmaan, we Redefine Innovation.
+    //       </h2>
+    //       <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+    //         We at,Nirmaan Hyperloop, aim to develop and innovate new modes of transport. Founded in 2018, now a team of 40 creative minds from various engineering domains, Nirmaan Hyperloop aimed to build a Globally recognizable Hyperloop pod.
 
-          </p>
-        </div>
-        <Image
-          src="/aboutimg2.jpg"
-          width={500}
-          height={500}
-          alt="linear demo image"
-          className="absolute -right-10 md:-right-[40%] lg:-right-[10%] -bottom-10 object-contain rounded-2xl"
-        />
-      </WobbleCard>
-    </div>
+    //       </p>
+    //     </div>
+    //     <Image
+    //       src="/aboutimg2.jpg"
+    //       width={500}
+    //       height={500}
+    //       alt="linear demo image"
+    //       className="absolute -right-10 md:-right-[40%] lg:-right-[10%] -bottom-10 object-contain rounded-2xl"
+    //     />
+    //   </WobbleCard>
+    // </div>
+    <>
+    <WobbleCard/>
+    </>
   );
 }
 
