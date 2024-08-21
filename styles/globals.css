@@ -135,3 +135,19 @@ iframe {
   /* height: 300px; 
   width: 500px; */
 }
+/* styles/globals.css */
+
+
+
+.cards{
+  background: linear-gradient(90deg,#281B2B,#3A164A); 
+ cursor: pointer;
+ transition: all 0.5s ease;
+}
+.cards:hover{
+   padding: 20px;
+   transition: 0.5s ease all;
+}
+.cards:hover>img{
+   border-radius: 20px;
+}
