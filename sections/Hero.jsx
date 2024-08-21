@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { navVariants } from "../utils/motion";
 
 const Hero = () => (
   <section className="py-24 text-white bg-black">
@@ -13,20 +14,23 @@ const Hero = () => (
       style={{ zIndex: 5 }}
     >
       <motion.h1
-        className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6"
+        className=" text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-shadow-xl"
         style={{ zIndex: 5 }}
       >
         Implementing the Future with
       </motion.h1>
       <motion.h1
-        className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8"
-        style={{ zIndex: 5 }}
+        variants={navVariants}
+        initial="hidden"
+        whileInView="show"
+        className="text-6xl md:text-6xl lg:text-8xl font-bold mb-8"
+        style={{ zIndex: 5, textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
       >
         Nirmaan Hyperloop
       </motion.h1>
 
       <motion.p
-        className="text-2xl md:text-2xl mb-8 sm:p-2 md:p-2 hidden sm:flex justify-center italic"
+        className="text-4xl md:text-4xl mb-8 sm:p-2 md:p-2 hidden sm:flex justify-center italic opacity-60"
         style={{ zIndex: 5 }}
       >
         Implementing the Future
@@ -35,10 +39,10 @@ const Hero = () => (
       <motion.div className="flex justify-center">
         <a
           href="#explore"
-          className="bg-white text-black font-bold py-2 px-6 rounded-full"
+          className="bg-white text-black font-bold py-2 px-6 rounded-full text-xl transition duration-300 ease-in-out transform border border-gray-500 hover:bg-transparent hover:text-white hover:scale-105 hover:shadow-lg"
           style={{ zIndex: 5 }}
         >
-          Explore Domains
+          Explore
         </a>
       </motion.div>
     </motion.div>

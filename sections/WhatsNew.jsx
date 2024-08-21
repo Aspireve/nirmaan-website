@@ -36,9 +36,28 @@ const WhatsNew = () => (
         <img
           src="/whats-new.png"
           alt="get-started"
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(255,255,255,0.4)] floating"
         />
       </motion.div>
+
+      <style>{`
+        @keyframes float {
+          0% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        .floating {
+          animation: float 3s ease-in-out infinite;
+        }
+      `}
+      </style>
     </motion.div>
   </section>
 );

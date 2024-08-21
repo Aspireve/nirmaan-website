@@ -2,7 +2,7 @@ export const exploreWorlds = [
   {
     id: "world-1",
     imgUrl: "/planet-01.png",
-    title: "Propulsion",
+    title: "Traction",
   },
   {
     id: "world-2",
@@ -17,7 +17,7 @@ export const exploreWorlds = [
   {
     id: "world-4",
     imgUrl: "/dom-aerodynamics.jpeg",
-    title: "Aerodynamics",
+    title: "Mechanical",
   },
   {
     id: "world-5",
