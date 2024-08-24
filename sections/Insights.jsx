@@ -63,13 +63,14 @@ const Insights = () => {
               className="flex flex-wrap justify-center items-center"
             >
               {posts.map((post, index) => (
-                <div
-                  className="w-full sm:w-1/2 md:w-1/3 p-4 mx-auto block"
+                <Link
+                  className="w-full h-full sm:w-1/2 md:w-1/3 p-4 mx-auto block"
                   key={index}
+                  href={`/Blog/${index + 1}`}
                 >
                   <motion.div
                     variants={slideIn("up", "tween", 0.8, 1)}
-                    className="relative overflow-hidden rounded-lg shadow-lg"
+                    className="relative overflow-hidden rounded-lg shadow-lg h-full"
                     initial={{ opacity: 0 }}
                     whileInView={{
                       opacity: [0, 1, 1], // Keep visible, then hide when reaching bottom-right
@@ -87,7 +88,7 @@ const Insights = () => {
                       className="w-full h-64 object-cover"
                     />
 
-                    <div className="px-6 py-4 bg-white">
+                    <div className="px-6 py-4 bg-white h-full">
                       <div className="font-bold text-xl mb-2">{post.title}</div>
                       <p className="text-gray-700 text-base">{post.caption}</p>
                       <p className="text-gray-500 text-base mt-2">
@@ -96,7 +97,7 @@ const Insights = () => {
                       </p>
                     </div>
                   </motion.div>
-                </div>
+                </Link>
               ))}
             </motion.div>
           )}

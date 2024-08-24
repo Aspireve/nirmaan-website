@@ -1,11 +1,12 @@
-"use client";
-import { motion } from "framer-motion";
-import styles from "../styles";
-import { navVariants } from "../utils/motion";
-import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
+'use client';
 
-function Navbar() {
+import { useState, useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import styles from '../styles';
+import { navVariants } from '../utils/motion';
+
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState(null);
   const [isVisible, setIsVisible] = useState(true);
@@ -22,37 +23,35 @@ function Navbar() {
       const currentScrollY = window.scrollY;
       const navbarHeight = navbarRef.current?.offsetHeight || 0;
       if (currentScrollY < lastScrollY.current) {
-        // Scrolling up
-        console.log("should be visible")
         setIsVisible(true);
       } else if (currentScrollY > navbarHeight) {
-        console.log("Here")
-        // Scrolling down and past the navbar
         setIsVisible(false);
       }
-      console.log("pls be here")
+      console.log('pls be here');
       lastScrollY.current = currentScrollY;
     };
 
-    window.addEventListener("scroll", handleScroll);
-    // return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <>
-      {/* Original desktop navbar */}
       <motion.nav
         ref={navbarRef}
         variants={navVariants}
         initial="hidden"
         whileInView="show"
-        className={`${styles.xPaddings} py-8 relative md:block hidden transition-transform duration-300 z-[1000] ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
+        className={`${
+          styles.xPaddings
+        } py-8 relative md:block hidden transition-transform duration-300 z-[1000] ${
+          isVisible ? 'translate-y-0' : '-translate-y-full'
+        }`}
         style={{
           zIndex: 5,
         }}
       >
         <div
-          className={` mx-auto flex flex-col sm:flex-row justify-between gap-8`}
+          className="mx-auto flex flex-col sm:flex-row justify-between gap-8"
           style={{ zIndex: 5 }}
         >
           <img
@@ -61,26 +60,36 @@ function Navbar() {
             className="w-[28px] h-[28px] scale-[250%] object-contain"
           />
 
-          {["HOME", "TEAM", "TIMELINE", "THE POD", "PARTNERS", "CONTACT"].map((item, index) => (
+          {[
+            { name: 'HOME', route: '' },
+            { name: 'TEAM', route: './About' },
+            { name: 'TIMELINE', route: '/Timeline' },
+            { name: 'THE POD', route: '/Pod' },
+            { name: 'PARTNERS', route: '/Partners' },
+            { name: 'CONTACT', route: '/Contact' },
+          ].map((item, index) => (
             <h2
               key={index}
-              className={`text-2xl leading-[30px] text-white transition-opacity duration-300 ${hoveredItem && hoveredItem !== item ? 'opacity-50' : 'opacity-100'}`}
-              onMouseEnter={() => handleMouseEnter(item)}
+              className={`text-2xl leading-[30px]  font-bold text-white transition-opacity duration-300 ${
+                hoveredItem && hoveredItem !== item.name
+                  ? 'opacity-25'
+                  : 'opacity-100'} ${!hoveredItem && 'opacity-65'}`}
+              onMouseEnter={() => handleMouseEnter(item.name)}
               onMouseLeave={handleMouseLeave}
               style={{ zIndex: 5 }}
             >
-              <Link href={`/${item === "HOME" ? "" : item}`}>{item}</Link>
+              <Link href={`${item.route}`}>{item.name}</Link>
             </h2>
           ))}
         </div>
       </motion.nav>
 
-      {/* Mobile navigation icon & toggle */}
       <div
         className="md:hidden flex justify-end items-center p-2"
         style={{ zIndex: 5 }}
       >
         <button
+          type="button"
           onClick={toggleMobileNav}
           aria-label="Open navigation menu"
           className="w-8 h-8 flex items-center justify-center text-white border border-white rounded-full"
@@ -90,7 +99,6 @@ function Navbar() {
         </button>
       </div>
 
-      {/* Mobile navigation links (only shown when open) */}
       {isOpen && (
         <motion.div
           className="md:hidden flex justify-center"
@@ -107,23 +115,34 @@ function Navbar() {
             className="mx-auto my-8 px-8 flex flex-col justify-center space-y-8 text-white text-24px leading-30px"
             style={{ zIndex: 5 }}
           >
-            {["HOME", "ABOUT", "BLOG", "TIMELINE", "THE POD", "PARTNERS", "CONTACT"].map((item, index) => (
+            {[
+              'HOME',
+              'ABOUT',
+              'BLOG',
+              'TIMELINE',
+              'THE POD',
+              'PARTNERS',
+              'CONTACT',
+            ].map((item, index) => (
               <h2
                 key={index}
-                className={`text-xl leading-[30px] text-white transition-opacity duration-300 ${hoveredItem && hoveredItem !== item ? 'opacity-50' : 'opacity-100'}`}
+                className={`text-xl leading-[30px] text-white transition-opacity duration-300 ${
+                  hoveredItem && hoveredItem !== item
+                    ? 'opacity-50'
+                    : 'opacity-100'
+                }`}
                 onMouseEnter={() => handleMouseEnter(item)}
                 onMouseLeave={handleMouseLeave}
                 style={{ zIndex: 5 }}
               >
-                <Link href={`/${item === "HOME" ? "" : item}`}>{item}</Link>
+                <Link href={`/${item === 'HOME' ? '' : item}`}>{item}</Link>
               </h2>
             ))}
           </div>
         </motion.div>
       )}
-      {/* <marquee className="text-white text-xl underline cursor-pointer" onClick={() => window.location.href="https://drive.google.com/file/d/19h42fQqRFqE7XuB-liZHtZ8MhdMHQI8w/"}>Click here to view our Research Paper</marquee> */}
     </>
   );
-}
+};
 
 export default Navbar;

@@ -4,6 +4,7 @@ import GoogleMap from "./GoogleMap";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { TitleText } from "./CustomTexts";
 
 async function handleSubmit(event) {
   event.preventDefault();
@@ -54,9 +55,7 @@ function ContactForm() {
   return (
     <>
       <div className="text-white bg-black ">
-        <div className="pt-10 px-6 text-6xl md:py-10 md:px-14  md:text-7xl mb-6 md:mb-0">
-          Contact us
-        </div>
+        <TitleText title={<>Contact Us</>} textStyles="text-left md:px-10 px-10" />
         <div className="flex xl:justify-evenly md:px-10 px-10 flex-wrap justify-center">
           <div className="flex-1 text-lg ">
             <div className="flex px-6">
