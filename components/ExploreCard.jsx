@@ -1,23 +1,24 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
 
-import styles from "../styles";
-import { fadeIn } from "../utils/motion";
+import styles from '../styles';
+import { fadeIn } from '../utils/motion';
 
-const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
+const ExploreCard = React.memo(({ id, imgUrl, title, index, active, handleClick }) => (
   <motion.div
-    variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+    variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative ${
-      active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
-    } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
-    onHoverStart={() => handleClick(id)}
+      active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
+    } flex items-center justify-center min-w-[170px] h-[400px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
+    onMouseEnter={() => handleClick(id)} // Changed onHoverStart to onMouseEnter
   >
     <img
       src={imgUrl}
-      alt="planet-04"
+      alt={title}
       className={`absolute w-full h-full object-cover rounded-[24px] ${
-        active !== id ? "opacity-40" : ""
+        active !== id ? 'opacity-40' : ''
       }`}
     />
     {active !== id ? (
@@ -49,6 +50,6 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
       </div>
     )}
   </motion.div>
-);
+));
 
 export default ExploreCard;

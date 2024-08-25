@@ -1,0 +1,8 @@
+[
+  { "name": "HOME", "route": "" },
+  { "name": "TEAM", "route": "./About" },
+  { "name": "TIMELINE", "route": "/Timeline" },
+  { "name": "THE POD", "route": "/Pod" },
+  { "name": "PARTNERS", "route": "/Partners" },
+  { "name": "CONTACT", "route": "/Contact" }
+]
