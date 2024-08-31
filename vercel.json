@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/cdn/logo",
+      "destination": "/cdn/logo.png"
+    }
+  ]
+}
