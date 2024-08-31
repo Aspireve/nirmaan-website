@@ -43,7 +43,7 @@ const Insights = () => {
         <TitleText title={<>Some of our Recent Posts</>} />
       </section>
       <div className="relative overflow-hidden rounded-md flex flex-col items-center justify-center dark:bg-grid-white/[0.05] antialiased">
-        <InfiniteMovingCards items={posts} direction="right" speed="normal" />
+        <InfiniteMovingCards items={posts} direction="right" speed="fast" />
       </div>
 
       <Link href="/Blog" className="flex justify-center mt-4">

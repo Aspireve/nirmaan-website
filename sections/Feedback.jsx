@@ -44,11 +44,18 @@ const Feedback = () => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="pt-15 relative flex-1 flex justify-center items-center overflow-hidden bg-white bg-opacity-30 rounded-2xl "
       >
-        <img
-          src="/pod1.png"
-          alt="nirmaan pod"
-          className="w-full lg:h-[550px] h-auto min-h-[210px] object-fill rounded-2xl hover:scale-125 duration-1000 transition-all"
-        />
+        <div className="relative w-full lg:h-[550px] h-auto min-h-[210px] rounded-2xl group">
+          <img
+            src="/pod1.png"
+            alt="nirmaan pod"
+            className="w-full h-full object-fill rounded-2xl transition-transform duration-1000 scale-110 group-hover:scale-100"
+          />
+          <img
+            src="/pod1-nobg.png"
+            alt="nirmaan pod"
+            className="absolute top-0 left-0 w-full h-full object-fill rounded-2xl transition-transform duration-1000 scale-110 group-hover:scale-125"
+          />
+        </div>
       </motion.div>
     </motion.div>
   </section>

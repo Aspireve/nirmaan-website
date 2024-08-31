@@ -9,3 +9,5 @@ export const Page = () => (
     <Footer />
   </>
 );
+
+export default Page;

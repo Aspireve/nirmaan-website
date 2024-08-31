@@ -41,7 +41,7 @@ export const Button = ({
 
     <div
       className={cn(
-        'relative bg-transparent border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased',
+        'relative bg-transparent border backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased',
         className,
       )}
       style={{

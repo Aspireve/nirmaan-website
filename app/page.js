@@ -1,4 +1,7 @@
-import { Footer } from '../components';
+import { Footer, TitleText, TypingText } from '../components';
+import Contact from '../components/contact';
+import { Input } from '../components/ui/input';
+import { Textarea } from '../components/ui/testarea';
 import {
   About,
   Explore,
@@ -7,7 +10,6 @@ import {
   Insights,
   WhatsNew,
 } from '../sections';
-import RootLayout from './layout';
 
 const Page = () => (
   <>
@@ -24,6 +26,7 @@ const Page = () => (
       <Insights />
       <Feedback />
     </div>
+    <Contact />
     <Footer />
   </>
 );

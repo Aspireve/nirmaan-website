@@ -2,7 +2,7 @@
 
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { navVariants } from '../utils/motion';
+import { heroNavVariants } from '../utils/motion';
 import { Button } from '../components/ui/moving-border';
 
 const Hero = () => {
@@ -10,7 +10,19 @@ const Hero = () => {
   const heroSubtitle = useMemo(() => 'Implementing the Future', []);
 
   return (
-    <section className="py-24 text-white relative">
+    <section className="py-20 text-white relative min-h-[95vh]">
+      <motion.div
+        initial={{ opacity: 0, scale: 1, translateX: '200%' }}
+        animate={{ opacity: 1, scale: 1, translateX: '0' }}
+        transition={{ duration: 2, delay:  0.7 }}
+        className="mt-2 absolute -bottom-20 right-0 w-full overflow-hidden"
+      >
+        <img
+          src="/herorender.png"
+          alt="hero_cover"
+          className="w-full h-full -translate-y-[10%] brightness-[0.65] object-contain"
+        />
+      </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -18,15 +30,18 @@ const Hero = () => {
         className="max-w-4xl mx-auto text-center"
       >
         <motion.h1
-          variants={navVariants}
+          variants={heroNavVariants}
           initial="hidden"
           whileInView="show"
-          className="text-6xl md:text-6xl lg:text-8xl font-bold mb-8 opacity-80"
+          className="text-6xl md:text-6xl lg:text-8xl font-bold mb-8 opacity-80 z-50"
           style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
         >
           {heroTitle}
         </motion.h1>
-        <motion.h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 opacity-65">
+        <motion.h1
+          className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 opacity-80"
+          style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
+        >
           {heroSubtitle}
         </motion.h1>
 
@@ -38,19 +53,6 @@ const Hero = () => {
           Explore
         </Button>
       </motion.div>
-
-      {/* <motion.div
-        initial={{ opacity: 0, scale: 0.4, translateX: '100%' }}
-        animate={{ opacity: 1, scale: 1, translateX: '0' }}
-        transition={{ duration: 1.2, delay: 0.3 }}
-        className="mt-2"
-      >
-        <img
-          src="/herorender.png"
-          alt="hero_cover"
-          className="w-full h-full object-fill mix-blend-multiply"
-        />
-      </motion.div> */}
     </section>
   );
 };

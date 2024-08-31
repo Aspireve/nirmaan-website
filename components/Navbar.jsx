@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
 import navlinks from '../constants/navlinks.json';
@@ -35,10 +36,11 @@ const Navbar = () => {
 
   const navItems = useMemo(
     () =>
+      // eslint-disable-next-line implicit-arrow-linebreak
       navlinks.map((item, index) => (
         <h2
           key={index}
-          className={`text-2xl leading-[30px] font-bold text-white transition-opacity duration-300 ${
+          className={`text-lg leading-[30px] font-bold text-white transition-opacity duration-300 lg:text-2xl ${
             hoveredItem && hoveredItem !== item.name
               ? 'opacity-25'
               : 'opacity-100'
@@ -67,29 +69,34 @@ const Navbar = () => {
         style={{ zIndex: 5 }}
       >
         <div className="mx-auto flex flex-col sm:flex-row justify-between gap-8">
-          <img
+          <Image
+            height={28}
+            width={28}
+            className="scale-[250%] object-contain"
             src="/logo-nobg.png"
-            alt="logo"
-            className="w-[28px] h-[28px] scale-[250%] object-contain"
           />
           {navItems}
         </div>
       </motion.nav>
 
-      <div className="md:hidden flex justify-end items-center p-2">
+      <div className="relative md:hidden flex justify-end items-center p-8 cursor-pointer z-50">
         <button
           type="button"
           onClick={toggleMobileNav}
           aria-label="Open navigation menu"
-          className="w-8 h-8 flex items-center justify-center text-white border border-white rounded-full"
+          className="w-8 h-8 flex items-center justify-center text-white rounded-full"
         >
-          <span className="text-3xl">&#9776;</span>
+          {isOpen ? (
+            <span className="text-4xl">&times;</span>
+          ) : (
+            <span className="text-4xl">&#9776;</span>
+          )}
         </button>
       </div>
 
       {isOpen && (
         <motion.div
-          className="md:hidden flex justify-center"
+          className="md:hidden flex justify-center z-50"
           variants={navVariants}
           initial="hidden"
           whileInView="show"
@@ -100,7 +107,7 @@ const Navbar = () => {
             {navlinks.map((item, index) => (
               <h2
                 key={index}
-                className={`text-xl leading-[30px] text-white transition-opacity duration-300 ${
+                className={`text-2xl text-center leading-[30px] font-bold text-white transition-opacity duration-300 ${
                   hoveredItem && hoveredItem !== item.name
                     ? 'opacity-50'
                     : 'opacity-100'
