@@ -7,8 +7,19 @@ import { newFeatures } from '../constants';
 import { NewFeatures, TitleText, TypingText } from '../components';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
 
+const floatingAnimation = {
+  animate: {
+    y: [0, -20, 0],
+    transition: {
+      duration: 3,
+      ease: 'easeInOut',
+      repeat: Infinity,
+    },
+  },
+};
+
 const WhatsNew = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section className={`${styles.paddings} relative z-10 `}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -31,12 +42,13 @@ const WhatsNew = () => (
 
       <motion.div
         variants={planetVariants('right')}
-        className={`flex-1 ${styles.flexCenter}`}
+        className={`flex-1 ${styles.flexCenter} relative`}
+        {...floatingAnimation}
       >
         <img
           src="/whats-new.png"
           alt="get-started"
-          className="w-full h-full object-contain filter drop-shadow-[0_0_10px_rgba(255,255,255,0.35)]"
+          className="w-full h-full object-contain filter drop-shadow-[10px_20px_10px_rgba(255,255,255,0.20)]"
         />
       </motion.div>
     </motion.div>

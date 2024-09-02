@@ -1,7 +1,4 @@
-import { Footer, TitleText, TypingText } from '../components';
-import Contact from '../components/contact';
-import { Input } from '../components/ui/input';
-import { Textarea } from '../components/ui/testarea';
+import { Footer } from '../components';
 import {
   About,
   Explore,
@@ -26,7 +23,6 @@ const Page = () => (
       <Insights />
       <Feedback />
     </div>
-    <Contact />
     <Footer />
   </>
 );
