@@ -41,11 +41,11 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
           {title}
         </h2>
-        <p className="text-white">
+        {/* <p className="text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
           doloremque temporibus maiores corrupti, ducimus libero est deleniti
           recusandae eveniet dolores.
-        </p>
+        </p> */}
       </div>
     )}
   </motion.div>
