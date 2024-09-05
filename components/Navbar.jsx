@@ -55,7 +55,7 @@ const Navbar = () => {
           style={{ zIndex: 5 }}
         >
           <img
-            src="/logo-nobg.png"
+            src="/cdn/logo.png"
             alt="logo"
             className="w-[28px] h-[28px] scale-[250%] object-contain"
           />
