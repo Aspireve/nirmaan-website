@@ -17,31 +17,29 @@ body::-webkit-scrollbar {
 
 /* Hide scrollbar for IE, Edge, and Firefox */
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .gradient-01 {
-  background-image: linear-gradient(
-    270deg,
-    hsl(295deg 76% 51%) 0%,
-    hsl(284deg 70% 73%) 26%,
-    hsl(257deg 70% 86%) 39%,
-    hsl(202deg 92% 90%) 50%,
-    hsl(215deg 77% 81%) 61%,
-    hsl(221deg 73% 70%) 74%,
-    hsl(220deg 76% 51%) 100%
-  );
+  background-image: linear-gradient(270deg,
+      hsl(295deg 76% 51%) 0%,
+      hsl(284deg 70% 73%) 26%,
+      hsl(257deg 70% 86%) 39%,
+      hsl(202deg 92% 90%) 50%,
+      hsl(215deg 77% 81%) 61%,
+      hsl(221deg 73% 70%) 74%,
+      hsl(220deg 76% 51%) 100%);
   filter: blur(125px);
 }
 
 .hero-gradient {
-  background: linear-gradient(
-    97.86deg,
-    #a509ff 0%,
-    #34acc7 53.65%,
-    #a134c7 100%
-  );
+  background: linear-gradient(97.86deg,
+      #a509ff 0%,
+      #34acc7 53.65%,
+      #a134c7 100%);
 }
 
 .gradient-02 {
@@ -88,11 +86,9 @@ body {
 }
 
 .gradient-05 {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0) 100%);
 }
 
 .feedback-gradient {
@@ -119,11 +115,9 @@ body {
 
 /* Contact Page */
 .glasseffect {
-  background: linear-gradient(
-    135deg,
-    rgba(72, 149, 212, 0.1),
-    rgba(64, 201, 194, 0)
-  );
+  background: linear-gradient(135deg,
+      rgba(72, 149, 212, 0.1),
+      rgba(64, 201, 194, 0));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   /* border: 1px solid rgba(255, 255, 255, 0.18); */
@@ -135,9 +129,11 @@ textarea {
   background: none;
   font-weight: 100;
 }
+
 input:focus {
   font-weight: 400;
 }
+
 /* * */
 
 iframe {
@@ -145,19 +141,41 @@ iframe {
   /* height: 300px; 
   width: 500px; */
 }
+
 /* styles/globals.css */
 
 
 
-.cards{
-  background: linear-gradient(90deg,#281B2B,#3A164A); 
- cursor: pointer;
- transition: all 0.5s ease;
+.cards {
+  background: linear-gradient(90deg, #281B2B, #3A164A);
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
-.cards:hover{
-   padding: 20px;
-   transition: 0.5s ease all;
+
+.cards:hover {
+  padding: 20px;
+  transition: 0.5s ease all;
 }
-.cards:hover>img{
-   border-radius: 20px;
+
+.cards:hover>img {
+  border-radius: 20px;
+}
+
+/* styles/globals.css or styles/WhatsNew.module.css */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
 }

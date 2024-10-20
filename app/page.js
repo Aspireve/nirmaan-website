@@ -1,6 +1,4 @@
-import { Footer, Navbar } from "../components";
-import { Post } from "../components/Post";
-import StarsCanvas from "../components/Starscanvas";
+import { Footer } from '../components';
 import {
   About,
   Explore,
@@ -8,34 +6,25 @@ import {
   Hero,
   Insights,
   WhatsNew,
-  GetStarted,
-} from "../sections";
+} from '../sections';
 
 const Page = () => (
-  <div className="bg-primary-black overflow-hidden">
-    <div style={{ zIndex: 5 }}>
-      <StarsCanvas />
-      <Navbar />
-    </div>
+  <>
     <Hero />
     <div className="relative">
       <About />
-      {/* <div className="gradient-03 z-0" /> */}
-      <Explore />
+      {/* <Explore /> */}
     </div>
-    <div className="relative">
-      <GetStarted />
+    {/* <div className="relative">
       <div className="gradient-03 z-0" />
       <WhatsNew />
     </div>
-
     <div className="relative">
       <Insights />
-      <div className="gradient-03 z-0" />
       <Feedback />
     </div>
-    <Footer />
-  </div>
+    <Footer /> */}
+  </>
 );
 
 export default Page;
