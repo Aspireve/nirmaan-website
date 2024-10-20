@@ -48,7 +48,7 @@ const WhatsNew = () => (
         <img
           src="/whats-new.png"
           alt="get-started"
-          className="w-full h-full object-contain filter drop-shadow-[10px_20px_10px_rgba(255,255,255,0.20)]"
+          className="w-full h-full object-contain filter drop-shadow-[10px_10px_10px_rgba(255,255,255,0.20)]"
         />
       </motion.div>
     </motion.div>

@@ -7,7 +7,7 @@ import { cn } from '../../utils/cn';
 export const LampContainer = ({ children, className }) => (
   <div
     className={cn(
-      'relative flex min-h-screen flex-col bg-transparent items-center justify-start  w-full rounded-md z-40',
+      'relative flex flex-col bg-transparent items-center justify-start  w-full rounded-md z-40',
       className,
     )}
   >
@@ -24,7 +24,7 @@ export const LampContainer = ({ children, className }) => (
       />
     </div>
 
-    <div className="absolute h-auto z-50 flex top-0 pt-5 flex-col items-center px-5">
+    <div className="absolute z-50 flex top-0 pt-5 flex-col items-center px-5">
       {children}
     </div>
   </div>

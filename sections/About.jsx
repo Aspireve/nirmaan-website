@@ -6,7 +6,7 @@ import { TitleText, TypingText } from '../components';
 import { LampContainer } from '../components/ui/highlights';
 
 const About = () => (
-  <LampContainer>
+  <LampContainer className="min-h-[160vh]">
     <TypingText title="About Us" textStyles="text-center" />
     <TitleText
       title={<>What is Nirmaan Hyperloop</>}

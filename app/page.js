@@ -13,9 +13,9 @@ const Page = () => (
     <Hero />
     <div className="relative">
       <About />
-      <Explore />
+      {/* <Explore /> */}
     </div>
-    <div className="relative">
+    {/* <div className="relative">
       <div className="gradient-03 z-0" />
       <WhatsNew />
     </div>
@@ -23,7 +23,7 @@ const Page = () => (
       <Insights />
       <Feedback />
     </div>
-    <Footer />
+    <Footer /> */}
   </>
 );
 
