@@ -25,7 +25,7 @@ import { StickyScroll } from '../../components/ui/sticky-scroll';
 
 const content = [
   {
-    arr: teamPrev,
+    arr: teamMentors,
     content: (
       <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
         Meet Our Mentors
@@ -41,7 +41,7 @@ const content = [
     ),
   },
   {
-    arr: teamPrev,
+    arr: teamLeads,
     content: (
       <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
         Meet The Leads

@@ -12,7 +12,7 @@ export const WobbleCards = () => (
         header={item.header}
         className={
           i === 2
-            ? 'md:col-span-2 flex flex-row-reverse items-center gap-5'
+            ? 'md:col-span-2 md:flex md:flex-row-reverse items-center gap-5'
             : ''
         }
       />

@@ -4,9 +4,9 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import ImageTooltip from '../../components/podimage';
 import ImageSlider from '../../components/ImageSlider';
-import * as Stats from '../../components/Stats';
+import Stats from '../../components/Stats';
 
-export const Page = () => (
+const Page = () => (
   <>
     <div className="md:flex justify-center mt-10">
       {/* Left container with video */}
@@ -75,3 +75,5 @@ export const Page = () => (
     <Footer />
   </>
 );
+
+export default Page;

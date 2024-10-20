@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 import { cn } from '../../utils/cn';
 
 export const InfiniteMovingCards = ({
@@ -11,7 +12,7 @@ export const InfiniteMovingCards = ({
   className,
 }) => {
   const scrollerRef = useRef(null);
-
+  const router = useRouter();
   useEffect(() => {
     const scroller = scrollerRef.current;
     if (scroller) {
@@ -40,8 +41,9 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, index) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 md:w-[350px] bg-white/80"
+            className="w-[350px] max-w-full relative rounded-2xl flex-shrink-0  md:w-[350px] bg-white/80"
             key={index}
+            onClick={() => router.push(`/Blog/${item.id}`)}
           >
             <div className="relative">
               <img
@@ -49,7 +51,7 @@ export const InfiniteMovingCards = ({
                 alt={item.title}
                 className="w-full h-64 object-cover rounded-ss-2xl rounded-se-2xl block"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-black rounded-ss-2xl rounded-se-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-[#000000aa] rounded-ss-2xl rounded-se-2xl" />
               <p className="absolute top-3 right-5 text-white text-base z-10">
                 {item.date.toLocaleDateString('en-US', {
                   day: 'numeric',

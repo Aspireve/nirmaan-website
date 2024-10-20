@@ -15,8 +15,8 @@ const Feedback = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-6`}
     >
-      <CardSpotlight className="h-auto w-96 z-10">
-        <div className="absolute inset-0 z-20 p-10">
+      <CardSpotlight className="h-full md:w-96 w-full z-10">
+        <div className="inset-0 z-20 md:p-10 p-4 h-full">
           <img
             src="/team/Anjanikumar-Dubey.jpg"
             className="h-1/2 w-full object-cover"

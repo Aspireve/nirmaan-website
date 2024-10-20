@@ -1,3 +1,5 @@
+'use client';
+
 import { Navbar } from '../components';
 import StarsCanvas from '../components/Starscanvas';
 import '../styles/globals.css';
