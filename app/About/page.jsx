@@ -18,6 +18,8 @@ import {
   teamCreatives,
   teamLeadstwo,
   teamPrev,
+  teamDomainLeads,
+  teamIncharges,
 } from '../../constants';
 import TeamMember from '../../components/Teammember';
 import { Button } from '../../components/ui/moving-border';
@@ -49,45 +51,53 @@ const content = [
     ),
   },
   {
-    arr: teamPrev,
+    arr: teamDomainLeads,
     content: (
       <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
-        Sense And Control
+        Meet The Domain Leads
       </div>
     ),
   },
   {
-    arr: teamPrev,
+    arr: teamIncharges,
     content: (
       <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
-        Propulsion And Levitation
+        Meet The Domain Incharges
       </div>
     ),
   },
-  {
-    arr: teamPrev,
-    content: (
-      <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
-        Mechanical And Brakes
-      </div>
-    ),
-  },
-  {
-    arr: teamPrev,
-    content: (
-      <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
-        Research And Development
-      </div>
-    ),
-  },
-  {
-    arr: teamPrev,
-    content: (
-      <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
-        Business And Outreach
-      </div>
-    ),
-  },
+  // {
+  //   arr: teamPrev,
+  //   content: (
+  //     <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
+  //       Propulsion And Levitation
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   arr: teamPrev,
+  //   content: (
+  //     <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
+  //       Mechanical And Brakes
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   arr: teamPrev,
+  //   content: (
+  //     <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
+  //       Research And Development
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   arr: teamPrev,
+  //   content: (
+  //     <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
+  //       Business And Outreach
+  //     </div>
+  //   ),
+  // },
 ];
 
 const Page = () => (

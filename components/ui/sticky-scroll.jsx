@@ -76,11 +76,11 @@ export const StickyScroll = ({ content, contentClassName }) => {
       <div className="relative flex items-start px-4 w-4/6">
         <div className="flex-1 w-full">
           {content.map((item, index) => (
-            <div key={item.title + index} className="h-full min-h-50vh my-20">
+            <div key={item.title + index} className="h-full my-20">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                className="text-2xl font-bold text-slate-100 flex flex-wrap -mx-4 mb-6 justify-center"
+                className="text-2xl font-bold text-slate-100 flex flex-wrap -mx-4 mb-6 justify-center min-h-[50vh]"
               >
                 {item?.arr?.map((member) => (
                   <TeamMember key={index} {...member} />
