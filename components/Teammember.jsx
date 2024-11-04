@@ -4,7 +4,7 @@ import React from "react";
 
 const TeamMember = ({ name, position, image, linkedin }) => {
   return (
-    <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+    <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 min-h-full">
       <div className="relative rounded-full overflow-hidden m-2.5">
         <img
           src={image} // Replace with actual image URL

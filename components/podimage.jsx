@@ -1,12 +1,13 @@
-"use client";
-import React, { useState } from "react";
-import "./ImageTooltip.css";
+'use client';
+
+import React, { useState } from 'react';
+import './ImageTooltip.css';
 
 const ImageTooltip = () => {
   const tooltips = [
     {
-      top: "30%",
-      left: "55%",
+      top: '30%',
+      left: '55%',
       content: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -23,11 +24,11 @@ const ImageTooltip = () => {
           />
         </svg>
       ),
-      additionalInfo: "Control Systems",
+      additionalInfo: 'Control Systems',
     },
     {
-      top: "31%",
-      right: "50%",
+      top: '31%',
+      right: '50%',
       content: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -44,11 +45,11 @@ const ImageTooltip = () => {
           />
         </svg>
       ),
-      additionalInfo: "Battery Pack BMS",
+      additionalInfo: 'Battery Pack BMS',
     },
     {
-      top: "65%",
-      right: "55%",
+      top: '65%',
+      right: '55%',
       content: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -65,11 +66,11 @@ const ImageTooltip = () => {
           />
         </svg>
       ),
-      additionalInfo: "Suspension",
+      additionalInfo: 'Suspension',
     },
     {
-      top: "4%",
-      left: "26%",
+      top: '4%',
+      left: '26%',
       content: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -86,11 +87,11 @@ const ImageTooltip = () => {
           />
         </svg>
       ),
-      additionalInfo: "Aeroshell",
+      additionalInfo: 'Aeroshell',
     },
     {
-      top: "43%",
-      right: "26%",
+      top: '43%',
+      right: '26%',
       content: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -107,11 +108,11 @@ const ImageTooltip = () => {
           />
         </svg>
       ),
-      additionalInfo: "Frames",
+      additionalInfo: 'Frames',
     },
     {
-      top: "63%",
-      right: "40%",
+      top: '63%',
+      right: '40%',
       content: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +129,7 @@ const ImageTooltip = () => {
           />
         </svg>
       ),
-      additionalInfo: "Traction-L IM",
+      additionalInfo: 'Traction-L IM',
     },
   ];
 
@@ -147,7 +148,7 @@ const ImageTooltip = () => {
         {tooltips.map((tooltip, index) => (
           <div
             key={index}
-            className={`tooltip ${activeTooltip === index ? "active" : ""}`}
+            className={`tooltip ${activeTooltip === index ? 'active' : ''}`}
             style={{
               top: tooltip.top,
               right: tooltip.right,
@@ -210,7 +211,7 @@ const ImageTooltip = () => {
         {tooltips.map((tooltip, index) => (
           <div
             key={index}
-            className={`tooltip ${activeTooltip === index ? "active" : ""}`}
+            className={`tooltip ${activeTooltip === index ? 'active' : ''}`}
             style={{
               top: tooltip.top,
               right: tooltip.right,

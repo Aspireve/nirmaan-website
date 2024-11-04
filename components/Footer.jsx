@@ -1,6 +1,7 @@
-"use client";
-import React from "react";
-import { socials } from "../constants";
+'use client';
+
+import React from 'react';
+import { socials } from '../constants';
 
 const Footer = () => (
   <footer className="py-8 relative bg-gradient-to-t from-gray-800 to-transparent">
@@ -17,7 +18,7 @@ const Footer = () => (
       <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
         {socials.map((social) => (
           <a
-            key={social.name}
+            key={social.id}
             href={social.link}
             target="_blank"
             rel="noopener noreferrer"
