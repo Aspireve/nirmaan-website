@@ -16,9 +16,9 @@ const Footer = () => (
       </div>
 
       <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
-        {socials.map((social) => (
+        {socials.map((social, idx) => (
           <a
-            key={social.id}
+            key={idx}
             href={social.link}
             target="_blank"
             rel="noopener noreferrer"
