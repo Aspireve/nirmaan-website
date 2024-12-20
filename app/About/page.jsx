@@ -33,7 +33,7 @@ const content = [
         Meet Our Mentors
       </div>
     ),
-  },
+  }, 
   {
     arr: teamPrev,
     content: (
