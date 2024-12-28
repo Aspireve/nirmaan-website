@@ -3,6 +3,10 @@
     {
       "source": "/cdn/logo",
       "destination": "/cdn/logo.png"
+    },
+    {
+      "source": "/cdn/quiz-thumbnail",
+      "destination": "/cdn/quiz-thumbnail.png"
     }
   ]
 }
