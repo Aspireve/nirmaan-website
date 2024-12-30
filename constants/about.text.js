@@ -14,7 +14,7 @@ export const items = [
   {
     title: 'Engineering',
     description:
-      'As a group of dedicated engineers, we are firmly <br/> grounded in the  relentless pursuit of excellence through top-tier engineering principles.',
+      'As a group of dedicated engineers, we are firmly grounded in the  relentless pursuit of excellence through top-tier engineering principles.',
     header: (
       <img
         src="/REDEFINE.jpg  "
