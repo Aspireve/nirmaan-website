@@ -100,6 +100,7 @@ const Page = () => (
               height={500} // Replace with the actual height of your image
               className="rounded-lg shadow-lg w-full h-full hover:scale-110 transition-all duration-1000"
               style={{ zIndex: 5 }}
+              priority
             />
           </motion.div>
 
