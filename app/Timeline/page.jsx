@@ -39,7 +39,9 @@ const Page = () => (
               textClassName="text-white text-2xl"
               dateClassName="date text-white "
               iconStyle={{ background: '#47335B' }}
-              icon={<img src="/stamp.png" alt="stamp" />}
+              icon={
+                <img src="https://utfs.io/f/O1Z0nCiJ5QID3SkuUCXNc20Qy7a4R6Ut8Lq5eBpdVbzMoChs" alt="stamp" />
+              }
             >
               {/* Title */}
               <h3
@@ -76,7 +78,7 @@ const Page = () => (
         <VerticalTimelineElement
           dateClassName="date text-white  text-4xl"
           iconStyle={{ background: '#47335B' }}
-          icon={<img src="/star.png" alt="star" />}
+          icon={<img src="https://utfs.io/f/O1Z0nCiJ5QIDkibtVCUhOQwZFVNqv91zgutpe4sMofKTdij5" alt="star" />}
         />
       </VerticalTimeline>
     </div>

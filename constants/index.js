@@ -1,31 +1,3 @@
-export const exploreWorlds = [
-  {
-    id: 'world-1',
-    imgUrl: '/planet-01.png',
-    title: 'Traction',
-  },
-  {
-    id: 'world-2',
-    imgUrl: '/dom-electronics.jpeg',
-    title: 'Electronics',
-  },
-  {
-    id: 'world-3',
-    imgUrl: '/planet-03.png',
-    title: 'Software',
-  },
-  {
-    id: 'world-4',
-    imgUrl: '/dom-aerodynamics.jpeg',
-    title: 'Mechanical',
-  },
-  {
-    id: 'world-5',
-    imgUrl: '/dom-business.jpeg',
-    title: 'Business',
-  },
-];
-
 export const newFeatures = [
   {
     imgUrl: '/cdn/logo.png',
@@ -44,17 +16,17 @@ export const newFeatures = [
 export const socials = [
   {
     name: 'twitter',
-    url: '/twitter.svg',
+    url: 'https://utfs.io/f/O1Z0nCiJ5QID3XphsANc20Qy7a4R6Ut8Lq5eBpdVbzMoChsK',
     link: 'https://twitter.com/nirmaanloop/',
   },
   {
     name: 'linkedin',
-    url: '/linkedin.svg',
+    url: 'https://utfs.io/f/O1Z0nCiJ5QIDlANdCCg6RjHkSpGIM7fogNzA8X1Q5iCZWB9b',
     link: 'https://www.linkedin.com/company/nirmaan-hyperloop/',
   },
   {
     name: 'instagram',
-    url: '/instagram.svg',
+    url: 'https://utfs.io/f/O1Z0nCiJ5QIDbwgMhPd0CVzKOTgLQJtc8He7XaBDYhP49M5f',
     link: 'https://www.instagram.com/nirmaanhyperloop/',
   },
 ];
@@ -63,30 +35,26 @@ export const teamMentors = [
   {
     name: 'Mr.Pankaj Rawool ',
     position: 'M.TECH in Machine Design',
-    image: 'mentors/Mr_Pankaj.jpg',
-    linkedin:
-      'https://www.linkedin.com/in/pankaj-rawool-b69ba4b5/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDg5YU2mcajzUg7YiLk9sQ3pwnMm4fxN1cAKVX',
+    linkedin: 'https://www.linkedin.com/in/pankaj-rawool-b69ba4b5',
   },
   {
     name: 'Mr.Iqbal Isaq Mujawar',
     position: 'M.E. in Mechanical-Thermal',
-    image: 'mentors/Mr_Iqbal.jpg',
-    linkedin:
-      'https://www.linkedin.com/in/iqbal-mujawar-80342533/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDHJ8DHU3MGvTPUjdBsZRtWl48C7hKz2SyaouX',
+    linkedin: 'https://www.linkedin.com/in/iqbal-mujawar-80342533',
   },
   {
     name: 'Dr.Hemant Kasturiwala',
     position: 'PhD in Electronics and Engineering',
-    image: 'mentors/Dr_Hemant.jpg',
-    linkedin:
-      'https://www.linkedin.com/in/dr-hemant-kasturiwale-jain-5274b319/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDNWhTE5j3qBkA8otKbdQpyPGlSaLsnCF4wej5',
+    linkedin: 'https://www.linkedin.com/in/dr-hemant-kasturiwale-jain-5274b319',
   },
   {
     name: 'Dr.Neha Mishra',
     position: 'PhD in Chemistry',
-    image: 'mentors/Dr_Neha.png',
-    linkedin:
-      'https://www.linkedin.com/in/dr-neha-mishra-a8590173/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDIeVGwSkiqWTstRCHygbQEhX5LDw4fSYeoOGP',
+    linkedin: 'https://www.linkedin.com/in/dr-neha-mishra-a8590173',
   },
 ];
 
@@ -94,49 +62,100 @@ export const teamPrev = [
   {
     name: 'Tejas Sharma',
     position: 'Founder',
-    image: 'prevmem/Tejas_Sharma.jpg',
-    linkedin: 'https://www.linkedin.com/in/',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDHONM8I3MGvTPUjdBsZRtWl48C7hKz2SyaouX',
+    linkedin: 'https://www.linkedin.com/in/tejassharma1',
   },
   {
     name: 'Ayush Agarwal',
     position: 'Ex Team Lead',
-    image: 'prevmem/Ayush_Agarwal.png',
-    linkedin: 'https://www.linkedin.com/in/',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDe61LUCb0W4Yvuim3FQTEH67hDnaGb9ofyx2P',
+    linkedin: 'https://www.linkedin.com/in/aaayu/',
   },
   {
     name: 'Amir Mehsaniya',
     position: 'Ex Team Manager',
-    image: 'prevmem/Amir_Mehsaniya.jpg',
-    linkedin: 'https://www.linkedin.com/in/',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDoZwcuPQyZzbEFXk4QSsrjxHW76BdVDYq1eMl',
+    linkedin: 'https://www.linkedin.com/in/amir-mehsaniya-1149a71b4/',
   },
   {
     name: 'Anam Ansari',
     position: 'Ex Software Lead',
-    image: 'prevmem/Anam_Ansari.png',
-    linkedin: 'https://www.linkedin.com/in/',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDHiz8R3MGvTPUjdBsZRtWl48C7hKz2SyaouXN',
+    linkedin: 'https://www.linkedin.com/in/anamansari062/',
   },
   {
     name: 'Anand Pasi',
     position: 'Ex Power Electronics Lead',
-    image: 'prevmem/Anand_Pasi.png',
-    linkedin: 'https://www.linkedin.com/in/',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDLlfaaC7zBSmfYwtAGeOKd9VToJCrDh7bxsI0',
+    linkedin: 'https://www.linkedin.com/in/pasianand/',
   },
   {
     name: 'Harsh Kudtarkar',
     position: 'Ex Electronics Lead',
-    image: 'prevmem/Harsh_Kudtarkar.png',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDmfZQ2oRCY10JuyXlpW7t543oNZkrqgPzcfBS',
     linkedin: 'https://www.linkedin.com/in/',
   },
   {
     name: 'Suditi Kuperkar',
     position: 'Ex Propulsion Lead',
-    image: 'prevmem/Suditi_Kuperkar.png',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDwqLsfyuPOVFYxWds06pvXnag7kqG2M3fC5Zm',
+    linkedin: 'https://www.linkedin.com/in/suditi-kuperkar-1a5174230/',
+  },
+  {
+    name: 'Rishit Sony',
+    position: 'Ex Mechanical Member',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDFfoWqJDQdOc3XnGqgjwmMWUSpDb1L40Vo2uT',
     linkedin: 'https://www.linkedin.com/in/',
+  },
+];
+
+export const teamPrev2 = [
+  {
+    name: 'Upkar Chaurasiya',
+    position: 'Ex Team Lead',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDI0AtGEnkiqWTstRCHygbQEhX5LDw4fSYeoOG',
+    linkedin: 'https://www.linkedin.com/in/upkar-chaurasiya-190509188/',
+  },
+  {
+    name: 'Hardik Jain',
+    position: 'Ex Team Manager',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QID3V6OZ3Nc20Qy7a4R6Ut8Lq5eBpdVbzMoChsK',
+    linkedin: 'https://www.linkedin.com/in/hardik-jain-b76860248/',
+  },
+  {
+    name: 'Maharshi Thakkar',
+    position: 'Ex Business Head',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDbB1zOid0CVzKOTgLQJtc8He7XaBDYhP49M5f',
+    linkedin: 'https://www.linkedin.com/in/maharshi-thakkar-533681218/',
+  },
+  {
+    name: 'Kanak Pandit',
+    position: 'Ex Non Tech and RnD Head',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QID0h3SioaFtLuTUqzgEBW9jMrsGPvbAaoZdcN8',
+    linkedin: 'https://www.linkedin.com/in/kanak-pandit-92740214b/',
+  },
+  {
+    name: 'Aditya Shandilya',
+    position: 'Ex Vice Captain',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDvRHsOlABwkqeOtIzW2PhZUmjCSbKp8yTNoVA',
+    linkedin: 'https://www.linkedin.com/in/shandilya-aditya/',
+  },
+  {
+    name: 'Aditeya Prajapati',
+    position: 'Ex Software Lead',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDwocwvVuPOVFYxWds06pvXnag7kqG2M3fC5Zm',
+    linkedin: 'https://www.linkedin.com/in/aditeya-prajapati-46b536232/',
+  },
+  {
+    name: 'Hrusheekesh Patil',
+    position: 'Ex Mechanical Lead',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDKqZzaiosPTXYS0nqEcuo8siDkVvCL2bIBGMz',
+    linkedin: 'https://www.linkedin.com/in/hrusheekesh-patil-5aab35259/',
   },
   {
     name: 'Vaibhav Uday Rane',
     position: 'Mentor',
-    image: 'prevmem/Vaibhav_Rane.jpg',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDlAoErjg6RjHkSpGIM7fogNzA8X1Q5iCZWB9b',
     linkedin: 'https://www.linkedin.com/in/',
   },
 ];
@@ -145,19 +164,19 @@ export const teamLeads = [
   {
     name: 'Anjanikumar Dubey',
     position: 'Team Lead',
-    image: 'team/Anjanikumar-Dubey.jpg',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDS5qmdyORq7mkC2DsEa8pM1UvcOTnrFldogLG',
     linkedin: 'https://www.linkedin.com/in/anjanikumar-dubey/',
   },
   {
     name: 'Narman Bannu J.',
     position: 'Team Manager',
-    image: 'team/Narman.png',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDTdBQwx8SLb5Msa7pjP9AmlI8Vwno2dFeRCrT',
     linkedin: 'https://www.linkedin.com/in/narman-bannu-j-45ba2724a',
   },
   {
     name: 'Ankit Maurya',
     position: 'Technical Lead',
-    image: 'team/AnkitMaurya.jpg',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDIogBrykiqWTstRCHygbQEhX5LDw4fSYeoOGP',
     linkedin: 'https://www.linkedin.com/in/ankit69',
   },
 ];
@@ -166,31 +185,31 @@ export const teamDomainLeads = [
   {
     name: 'Avdhoot Bhatkar',
     position: 'Propulsion Lead',
-    image: 'team/Avdhoot_Bhatkar.jpg',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDfIsyLFnlYyn80uvocQx4NLFkszwUgMEB16Iq',
     linkedin: 'https://www.linkedin.com/in/avdhoot-m-bhatkar-7166992ab',
   },
   {
     name: 'Vinay Yadav',
     position: 'Mechanical Lead',
-    image: 'team/Vinay_Mech.jpg',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDOKUNpsiJ5QIDy7LoZXzKY1vc4k2ba9gVmGep',
     linkedin: 'https://www.linkedin.com/in/vinay-yadav-442872289',
   },
   {
     name: 'Anjanikumar Dubey',
     position: 'Levitation Lead',
-    image: 'team/Anjanikumar-Dubey.jpg',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDS5qmdyORq7mkC2DsEa8pM1UvcOTnrFldogLG',
     linkedin: 'https://www.linkedin.com/in/anjanikumar-dubey/',
   },
   {
     name: 'Steve Fernandes',
     position: 'Sense & Control Lead',
-    image: 'team/Steve_Fernandes.jpg',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDNDwB7pj3qBkA8otKbdQpyPGlSaLsnCF4wej5',
     linkedin: 'https://www.linkedin.com/in/aspireve',
   },
   {
     name: 'Ankur Saroj',
     position: 'Creatives Leads',
-    image: 'team/Ankur_Saroj.png',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDTUlZoH8SLb5Msa7pjP9AmlI8Vwno2dFeRCrT',
     linkedin: 'https://www.linkedin.com/in/',
   },
 ];
@@ -199,256 +218,26 @@ export const teamIncharges = [
   {
     name: 'Ankit Tejam',
     position: 'Power Electronics Incharge',
-    image: 'team/Ankit_Tejam.jpg',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDHZYme43MGvTPUjdBsZRtWl48C7hKz2SyaouX',
     linkedin: 'https://www.linkedin.com/in/johndoe',
   },
   {
     name: 'Yash Save',
     position: 'Business Incharge',
-    image: 'team/Yash_Save.jpg',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDu3Hkv9zIBOilsmRj8oDt61Kyxh7QrXW3bgTn',
     linkedin: 'https://www.linkedin.com/in/yash-save-21b977263/',
   },
   {
     name: 'Steve Fernandes',
     position: 'Outreach Incharge',
-    image: 'team/Steve_Fernandes.jpg',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDNDwB7pj3qBkA8otKbdQpyPGlSaLsnCF4wej5',
     linkedin: 'https://www.linkedin.com/in/aspireve',
   },
   {
     name: 'Sanyam Jain',
     position: 'Research Incharge',
-    image: 'team/Sanyam_Jain.jpg',
+    image: 'https://utfs.io/f/O1Z0nCiJ5QIDNJfAeNj3qBkA8otKbdQpyPGlSaLsnCF4wej5',
     linkedin: 'https://www.linkedin.com/in/sanyam-jain-350836233/',
   },
 ];
 
-export const teamLeadstwo = [
-  {
-    name: 'Maharshi Thakkar',
-    position: 'Business Head',
-    image: 'team/Maharshi_Thakkar.jpg',
-    linkedin: 'https://www.linkedin.com/in/',
-  },
-  {
-    name: 'Kanak Pandit',
-    position: 'Non Tech and RnD Head',
-    image: 'team/Kanak_Pandit.jpg',
-    linkedin: 'https://www.linkedin.com/in/kanak-pandit-92740214b/',
-  },
-  {
-    name: 'Aditya Shandilya',
-    position: 'Vice Captain',
-    image: 'team/Aditya_Shandilya.jpg',
-    linkedin: 'www.linkedin.com/in/shandilya-aditya',
-  },
-];
-
-export const teamSoftware = [
-  {
-    name: 'Sanyam Jain',
-    position: 'Software',
-    image: 'team/Sanyam_Jain.jpg',
-    linkedin: 'https://www.linkedin.com/in/sanyam-jain-350836233/',
-  },
-  {
-    name: 'Ankit Maurya',
-    position: 'Software',
-    image: 'team/AnkitMaurya.jpg',
-    linkedin: 'https://www.linkedin.com/in/ankit69',
-  },
-  {
-    name: 'Steve Fernandes',
-    position: 'Software',
-    image: 'team/Steve_Fernandes.jpg',
-    linkedin: 'https://www.linkedin.com/in/aspireve',
-  },
-];
-
-export const teamElectronics = [
-  {
-    name: 'Maharshi Thakkar',
-    position: 'Electronics',
-    image: 'team/Maharshi_Thakkar.jpg',
-    linkedin: 'https://www.linkedin.com/in/',
-  },
-  {
-    name: 'Tanushi Shah',
-    position: 'Electronics',
-    image: 'team/Tanushi_Shah.jpg',
-    linkedin: 'https://www.linkedin.com/in/',
-  },
-  {
-    name: 'Ankit Tejam',
-    position: 'Electronics',
-    image: 'team/Ankit_Tejam.jpg',
-    linkedin: 'https://www.linkedin.com/in/johndoe',
-  },
-  {
-    name: 'Pradyuman Sharma',
-    position: 'Electronics',
-    image: 'team/Pradyumne_Sharma.png',
-    linkedin: 'https://www.linkedin.com/in/johndoe',
-  },
-];
-
-export const teamPropulsion = [
-  {
-    name: 'Aditya Poojary',
-    position: 'Propulsion',
-    image: 'team/Aditya_Poojary.jpg',
-    linkedin: 'https://www.linkedin.com/in/aditya-poojary',
-  },
-  {
-    name: 'Sourajeet Sahoo',
-    position: 'Propulsion',
-    image: 'team/Sahoo_Sourajeet.jpg',
-    linkedin: 'https://www.linkedin.com/in/sahoo-sourajeet-29743025b',
-  },
-  {
-    name: 'Avdhoot Bhatkar',
-    position: 'Propulsion',
-    image: 'team/Avdhoot_Bhatkar.jpg',
-    linkedin: 'https://www.linkedin.com/in/avdhoot-m-bhatkar-7166992ab',
-  },
-  {
-    name: 'Sidd',
-    position: 'Propulsion',
-    image: 'team/Sidd_propulsion.jpg',
-    linkedin: 'https://www.linkedin.com/in/',
-  },
-];
-
-export const teamBattery = [
-  {
-    name: 'John Doe',
-    position: 'Software Engineer',
-    image: 'profile.jpg',
-    linkedin: 'https://www.linkedin.com/in/johndoe',
-  },
-  {
-    name: 'John Doe',
-    position: 'Software Engineer',
-    image: 'profile.jpg',
-    linkedin: 'https://www.linkedin.com/in/johndoe',
-  },
-  {
-    name: 'John Doe',
-    position: 'Software Engineer',
-    image: 'profile.jpg',
-    linkedin: 'https://www.linkedin.com/in/johndoe',
-  },
-  {
-    name: 'John Doe',
-    position: 'Software Engineer',
-    image: 'profile.jpg',
-    linkedin: 'https://www.linkedin.com/in/johndoe',
-  },
-];
-
-export const teamMechanical = [
-  {
-    name: 'Hardik Jain',
-    position: 'Team Manager',
-    image: 'team/Hardik_Jain.webp',
-    linkedin: 'https://www.linkedin.com/in/hardik-jain-b76860248/',
-  },
-  {
-    name: 'Narman Bannu J.',
-    position: 'Mechanical',
-    image: 'team/Narman.png',
-    linkedin: 'https://www.linkedin.com/in/narman-bannu-j-45ba2724a',
-  },
-  {
-    name: 'Akshita Singh',
-    position: 'Mechanical',
-    image: 'team/Akshita_Singh.JPG',
-    linkedin: 'https://www.linkedin.com/in/akshita-singh-641142275',
-  },
-  {
-    name: 'Vinay Yadav',
-    position: 'MME_2025',
-    image: 'team/Vinay_Mech.jpg',
-    linkedin: 'https://www.linkedin.com/in/vinay-yadav-442872289',
-  },
-  {
-    name: 'Yash Save',
-    position: 'Mechanical',
-    image: 'team/Yash_Save.jpg',
-    linkedin: 'https://www.linkedin.com/in/yash-save-21b977263/',
-  },
-];
-
-export const teamCreatives = [
-  {
-    name: 'Siddharth Prabhudesai',
-    position: 'Creatives',
-    image: 'team/Siddharth _Prabhudesai.jpg',
-    linkedin: 'https://www.linkedin.com/in/siddharth-prabhudesai-895709254',
-  },
-  {
-    name: 'Ankur Saroj',
-    position: 'Creatives',
-    image: 'team/Ankur_Saroj.png',
-    linkedin: 'https://www.linkedin.com/in/',
-  },
-  {
-    name: 'Karishma Yadav',
-    position: 'Creatives',
-    image: 'team/Karishma_Yadav.jpeg',
-    linkedin: 'https://www.linkedin.com/in/karishma-yadav-362b27282',
-  },
-];
-
-export const teamSoftwareLead = [
-  {
-    name: 'Aditeya Prajapati',
-    position: 'Software Lead',
-    image: 'team/aditeya.jpg',
-    linkedin: 'https://www.linkedin.com/in/aditeya-prajapati-46b536232/',
-  },
-];
-
-export const teamElectronicsLead = [
-  {
-    name: 'Aditya Shandilya',
-    position: 'Electronics Lead',
-    image: 'team/Aditya_Shandilya.jpg',
-    linkedin: 'www.linkedin.com/in/shandilya-aditya',
-  },
-];
-
-export const teamPropulsionLead = [
-  {
-    name: 'Anjanikumar Dubey',
-    position: 'Propulsion Lead',
-    image: 'team/Anjanikumar-Dubey.jpg',
-    linkedin: 'https://www.linkedin.com/in/anjanikumar-dubey/',
-  },
-];
-
-export const teamBatteryLead = [
-  {
-    name: 'John Doe',
-    position: 'Software Engineer',
-    image: 'profile.jpg',
-    linkedin: 'https://www.linkedin.com/in/johndoe',
-  },
-];
-
-export const teamMechanicalLead = [
-  {
-    name: 'Hrusheekesh Patil',
-    position: 'Mechanical Lead',
-    image: 'team/Hrusheekesh_Patil.jpg',
-    linkedin: 'https://www.linkedin.com/in/',
-  },
-];
-
-export const teamCreativesLead = [
-  {
-    name: 'Shifali Singh',
-    position: 'Creatives Lead',
-    image: 'team/Shifali_Singh.jpg',
-    linkedin: 'https://www.linkedin.com/in/',
-  },
-];

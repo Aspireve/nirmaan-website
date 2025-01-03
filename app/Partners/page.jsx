@@ -1,60 +1,70 @@
 'use client';
 
+import Image from 'next/image';
 import Footer from '../../components/Footer';
 
 const Page = () => {
   const partners = [
     {
       name: 'Pheonix Contact',
-      image: 'pheonix.webp',
+      image:
+        'https://utfs.io/f/O1Z0nCiJ5QIDiN9sIjMdFmIrsWPeZvn1GMQqaDKEfJVYTXB2',
       type: 'PLC, sensors & mentorship required for prototype',
       url: 'https://www.phoenixcontact.com/en-in/',
     },
     {
       name: 'Falcon Labs',
-      image: 'falcon.webp',
+      image:
+        'https://utfs.io/f/O1Z0nCiJ5QID9ab04XZO1LUFQGPiZoq6uaEHlVMDt9se2NJm',
       type: 'Monetary investment & mentorship',
       url: 'https://www.faclon.com/',
     },
     {
       name: 'Altium',
-      image: 'Altium.jpg',
+      image:
+        'https://utfs.io/f/O1Z0nCiJ5QIDAKGVjDXSTZdweqp2MYV0BKDP9G1LmCtxf4nh',
       type: 'Used for simulating and editing semantics',
       url: 'https://www.altium.com/',
     },
     {
       name: 'Solid Works',
-      image: 'solidworks.webp',
+      image:
+        'https://utfs.io/f/O1Z0nCiJ5QIDad7OOwvpHvsrWoqcLFUC6jP93lf8wZxD7512',
       type: 'Used for simulation',
       url: 'https://www.solidworks.com/',
     },
     {
       name: 'MSC Software',
-      image: 'msc.webp',
+      image:
+        'https://utfs.io/f/O1Z0nCiJ5QIDwTtPjfuPOVFYxWds06pvXnag7kqG2M3fC5Zm',
       type: 'Used for modelling & prototyping',
       url: 'https://hexagon.com/company/divisions/manufacturing-intelligence/msc-software?utm_easyredir=www.mscsoftware.com',
     },
     {
       name: 'MathWorks',
-      image: 'mathworks.webp',
+      image:
+        'https://utfs.io/f/O1Z0nCiJ5QIDwIkh3AuPOVFYxWds06pvXnag7kqG2M3fC5Zm',
       type: 'Used for simulation & data analysis',
       url: 'https://www.mathworks.com/',
     },
     {
       name: 'AEI',
-      image: 'aei.webp',
+      image:
+        'https://utfs.io/f/O1Z0nCiJ5QIDcZma4OeKOBsSYGA7qmtIe5i6N3nb9rMkwaZF',
       type: 'Provides components for breaking systems',
       url: '',
     },
     {
       name: 'Ansys',
-      image: 'ansys.png',
+      image:
+        'https://utfs.io/f/O1Z0nCiJ5QIDFdYhHhQdOc3XnGqgjwmMWUSpDb1L40Vo2uTr',
       type: 'Used for simulation & data analysis',
       url: 'https://www.ansys.com/en-in',
     },
     {
       name: 'True&Tech',
-      image: 'truetech.webp',
+      image:
+        'https://utfs.io/f/O1Z0nCiJ5QIDfglu2PnlYyn80uvocQx4NLFkszwUgMEB16Iq',
       type: 'Provides monetary support',
       url: '',
     },
@@ -84,10 +94,12 @@ const Page = () => {
             {partners.map((partner) => (
               <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
                 <div className="h-60 w-96">
-                  <img
+                  <Image
                     className="h-full w-full transition-transform duration-500 group-hover:scale-125 object-contain"
                     src={partner.image}
                     alt={`${partner.name} logo`}
+                    width={500} // Replace with appropriate width
+                    height={500} // Replace with appropriate height
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent  group-hover:from-black/64 group-hover:via-black/60 group-hover:to-black/64" />
@@ -110,235 +122,6 @@ const Page = () => {
                 </div>
               </div>
             ))}
-            {/* <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div className="h-60 w-96">
-                <img
-                  className="h-full w-full object-none transition-transform duration-500 group-hover:scale-125"
-                  src="falcon.webp"
-                  alt=""
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent  group-hover:from-black/64 group-hover:via-black/60 group-hover:to-black/64" />
-              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <div className="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <div className="font-dmserif text-3xl font-bold text-white">
-                    Falcon Labs
-                  </div>
-                  Monetary investment & mentorship{' '}
-                </div>
-                <a
-                  href="https://www.faclon.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button
-                    type="button"
-                    className="rounded-full bg-[#25618B] py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
-                  >
-                    See More
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div className="h-60 w-96  flex items-center">
-                <img
-                  className="h-auto  w-full transition-transform duration-500 group-hover:scale-125"
-                  src="Altium.jpg"
-                  alt=""
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent  group-hover:from-black/64 group-hover:via-black/60 group-hover:to-black/64" />
-              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <div className="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <div className="font-dmserif text-3xl font-bold text-white">
-                    Altium
-                  </div>
-                  Used for simulating and editing semantics
-                </div>
-                <a
-                  href="https://www.altium.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button
-                    type="button"
-                    className="rounded-full bg-[#25618B] py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
-                  >
-                    See More
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div className="h-60 w-96">
-                <img
-                  className="h-full w-full object-none transition-transform duration-500 group-hover:scale-125"
-                  src="solidworks.webp"
-                  alt=""
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent  group-hover:from-black/64 group-hover:via-black/60 group-hover:to-black/64" />
-              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <div className="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <div className="font-dmserif text-3xl font-bold text-white">
-                    Solid Works
-                  </div>
-                  Used for simulation
-                </div>
-                <a
-                  href="https://www.solidworks.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button
-                    type="button"
-                    className="rounded-full bg-[#25618B] py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
-                  >
-                    See More
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div className="h-60 w-96">
-                <img
-                  className="h-full w-full object-none transition-transform duration-500 group-hover:scale-125"
-                  src="msc.webp"
-                  alt=""
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent  group-hover:from-black/64 group-hover:via-black/60 group-hover:to-black/64" />
-              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <div className="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <div className="font-dmserif text-3xl font-bold text-white">
-                    MSC Software
-                  </div>
-                  Used for modelling & prototyping
-                </div>
-                <a
-                  href="https://hexagon.com/company/divisions/manufacturing-intelligence/msc-software?utm_easyredir=www.mscsoftware.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button
-                    type="button"
-                    className="rounded-full bg-[#25618B] py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
-                  >
-                    See More
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div className="h-60 w-96">
-                <img
-                  className="h-full w-full object-none transition-transform duration-500 group-hover:scale-125"
-                  src="mathworks.webp"
-                  alt=""
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent  group-hover:from-black/64 group-hover:via-black/60 group-hover:to-black/64" />
-              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <div className="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <div className="font-dmserif text-3xl font-bold text-white">
-                    MathWorks
-                  </div>
-                  Used for simulation & data analysis
-                </div>
-                <a
-                  href="https://www.mathworks.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button
-                    type="button"
-                    className="rounded-full bg-[#25618B] py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
-                  >
-                    See More
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div className="h-60 w-96">
-                <img
-                  className="h-full w-full object-none transition-transform duration-500 group-hover:scale-125"
-                  src="aei.webp"
-                  alt=""
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent  group-hover:from-black/64 group-hover:via-black/60 group-hover:to-black/64" />
-              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <div className="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <div className="font-dmserif text-3xl font-bold text-white">
-                    AEI
-                  </div>
-                  Provides components for breaking systems
-                </div>
-                <button
-                  type="button"
-                  className="rounded-full bg-[#25618B] py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
-                >
-                  See More
-                </button>
-              </div>
-            </div>
-            <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-              <div className="h-60 w-96">
-                <img
-                  className="h-full w-full object-none transition-transform duration-500 group-hover:scale-125"
-                  src="ansys.png"
-                  alt=""
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent  group-hover:from-black/64 group-hover:via-black/60 group-hover:to-black/64" />
-              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <div className="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <div className="font-dmserif text-3xl font-bold text-white">
-                    Ansys
-                  </div>
-                  Used for simulation & data analysis
-                </div>
-                <a
-                  href="https://www.ansys.com/en-in"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button
-                    type="button"
-                    className="rounded-full bg-[#25618B] py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
-                  >
-                    See More
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 ">
-              <div className="h-60 w-96">
-                <img
-                  className="h-full w-full object-none transition-transform duration-500 group-hover:scale-125"
-                  src="truetech.webp"
-                  alt=""
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent  group-hover:from-black/64 group-hover:via-black/60 group-hover:to-black/64" />
-              <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <div className="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <div className="font-dmserif text-3xl font-bold text-white">
-                    True&Tech
-                  </div>
-                  Provides monetary support
-                </div>
-                <button
-                  type="button"
-                  className="rounded-full bg-[#25618B] py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60"
-                >
-                  See More
-                </button>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

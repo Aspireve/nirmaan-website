@@ -18,7 +18,7 @@ const Page = () => (
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="podpage2.mp4" type="video/mp4" />
+          <source src="https://utfs.io/f/O1Z0nCiJ5QID36VaHvNc20Qy7a4R6Ut8Lq5eBpdVbzMoChsK" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

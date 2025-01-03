@@ -1,27 +1,15 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Footer } from '../../components';
+import Image from 'next/image';
 import {
   teamMentors,
-  teamLeads,
-  teamManager,
-  teamSoftware,
-  teamElectronics,
-  teamMechanical,
-  teamPropulsion,
-  teamSoftwareLead,
-  teamElectronicsLead,
-  teamMechanicalLead,
-  teamPropulsionLead,
-  teamCreativesLead,
-  teamCreatives,
-  teamLeadstwo,
   teamPrev,
+  teamPrev2,
+  teamLeads,
   teamDomainLeads,
   teamIncharges,
 } from '../../constants';
-import TeamMember from '../../components/Teammember';
 import { Button } from '../../components/ui/moving-border';
 import { StickyScroll } from '../../components/ui/sticky-scroll';
 
@@ -33,9 +21,17 @@ const content = [
         Meet Our Mentors
       </div>
     ),
-  }, 
+  },
   {
     arr: teamPrev,
+    content: (
+      <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
+        Our Past Stars
+      </div>
+    ),
+  },
+  {
+    arr: teamPrev2,
     content: (
       <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
         Our Past Stars
@@ -66,38 +62,6 @@ const content = [
       </div>
     ),
   },
-  // {
-  //   arr: teamPrev,
-  //   content: (
-  //     <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
-  //       Propulsion And Levitation
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   arr: teamPrev,
-  //   content: (
-  //     <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
-  //       Mechanical And Brakes
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   arr: teamPrev,
-  //   content: (
-  //     <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
-  //       Research And Development
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   arr: teamPrev,
-  //   content: (
-  //     <div className="text-left h-full w-full flex items-center justify-center text-6xl font-bold text-white">
-  //       Business And Outreach
-  //     </div>
-  //   ),
-  // },
 ];
 
 const Page = () => (
@@ -129,9 +93,11 @@ const Page = () => (
             className="rounded-lg md:w-1/2 lg:w-1/3 mb-4 md:mb-0 mr-4 ml-4 overflow-hidden"
             style={{ zIndex: 5 }}
           >
-            <img
-              src="/teamabout.avif"
+            <Image
+              src="https://utfs.io/f/O1Z0nCiJ5QIDc8PVU5eKOBsSYGA7qmtIe5i6N3nb9rMkwaZF"
               alt="About Us"
+              width={500} // Replace with the actual width of your image
+              height={500} // Replace with the actual height of your image
               className="rounded-lg shadow-lg w-full h-full hover:scale-110 transition-all duration-1000"
               style={{ zIndex: 5 }}
             />
@@ -169,130 +135,6 @@ const Page = () => (
       </div>
     </motion.section>
     <StickyScroll content={content} />
-
-    {/* Team section */}
-    {/* <div className="bg-black" id="team">
-      <div className="container mx-auto py-16">
-        <h2 className="text-3xl font-semibold mb-8 text-white text-center">
-          Our Mentors
-        </h2>
-        <div className="flex flex-wrap -mx-4 mb-6 justify-center">
-          {teamMentors.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-
-        <h2 className="text-3xl font-semibold mb-8 text-white text-center">
-          Previous Members
-        </h2>
-        <div className="flex flex-wrap -mx-4 mb-6 justify-center">
-          {teamPrev.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-
-        <h2 className="text-3xl font-semibold mb-8 text-white text-center">
-          Our Leads
-        </h2>
-        <div className="flex flex-wrap -mx-4 mb-6 justify-center">
-          {teamLeads.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-
-        <div className="flex flex-wrap -mx-4 mb-6 justify-center">
-          {teamManager.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-
-        <div className="flex flex-wrap -mx-4 mb-6 justify-center">
-          {teamLeadstwo.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-
-        {/* <h2 className="text-3xl font-semibold mb-8 text-white text-center">
-            Our Mentors
-          </h2>
-          <div className="flex flex-wrap -mx-4 mb-6">
-            {teamMentors.map((member, index) => (
-              <TeamMember key={index} {...member} />
-            ))}
-          </div> */}
-
-    {/* <h2 className="text-3xl font-semibold mb-8 text-white text-center">
-          Software
-        </h2>
-        <div className="flex flex-wrap -mx-4 mb-6 justify-center">
-          {teamSoftwareLead.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-        <div className="flex flex-wrap -mx-4 mb-6">
-          {teamSoftware.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-
-        <h2 className="text-3xl font-semibold mb-8 text-white text-center">
-          Electronics
-        </h2>
-        <div className="flex flex-wrap -mx-4 mb-6 justify-center">
-          {teamElectronicsLead.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-        <div className="flex flex-wrap -mx-4 mb-6">
-          {teamElectronics.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-
-        <h2 className="text-3xl font-semibold mb-8 text-white text-center">
-          Propulsion
-        </h2>
-        <div className="flex flex-wrap -mx-4 mb-6 justify-center">
-          {teamPropulsionLead.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-        <div className="flex flex-wrap -mx-4 mb-6">
-          {teamPropulsion.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-
-        <h2 className="text-3xl font-semibold mb-8 text-white text-center">
-          Mechanical
-        </h2>
-        <div className="flex flex-wrap -mx-4 mb-6 justify-center">
-          {teamMechanicalLead.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-        <div className="flex flex-wrap -mx-4">
-          {teamMechanical.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-
-        <h2 className="text-3xl font-semibold mb-8 text-white text-center">
-          Creatives
-        </h2>
-        <div className="flex flex-wrap -mx-4 mb-6 justify-center">
-          {teamCreativesLead.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-        <div className="flex flex-wrap -mx-4">
-          {teamCreatives.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
-        </div>
-      </div>
-    </div> */}
-    {/* <Footer /> */}
   </>
 );
 

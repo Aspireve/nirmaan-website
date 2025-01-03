@@ -33,7 +33,7 @@ const ExploreCard = React.memo(
             className={`${styles.flexCenter} justify-end w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
           >
             <Image
-              src="/logo1.png"
+              src="https://utfs.io/f/O1Z0nCiJ5QIDzxgXFI1j2edwVHFYD3BlAbf8TS57qQ4UiztL"
               alt="headset"
               layout="intrinsic"
               width={60}

@@ -3,7 +3,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useMotionValueEvent, useScroll, motion } from 'framer-motion';
 import { cn } from '../../utils/cn';
-import { teamMentors } from '../../constants';
 import TeamMember from '../Teammember';
 
 export const StickyScroll = ({ content, contentClassName }) => {

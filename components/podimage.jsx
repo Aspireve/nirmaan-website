@@ -140,7 +140,7 @@ const ImageTooltip = () => {
       <div className=" scale-105 relative md:hidden">
         <div className="text-center">
           <img
-            src="podimage2.png" // Replace with the path to your image
+            src="https://utfs.io/f/O1Z0nCiJ5QIDcdUmZCKeKOBsSYGA7qmtIe5i6N3nb9rMkwaZ" // Replace with the path to your image
             alt="Pod"
             className="max-w-full max-h-full mx-auto"
           />
@@ -203,7 +203,7 @@ const ImageTooltip = () => {
       <div className="w-1/2 relative hidden md:block">
         <div className="text-center">
           <img
-            src="podimage2.png" // Replace with the path to your image
+            src="https://utfs.io/f/O1Z0nCiJ5QIDcdUmZCKeKOBsSYGA7qmtIe5i6N3nb9rMkwaZ" // Replace with the path to your image
             alt="Pod"
             className="max-w-full max-h-full mx-auto"
           />

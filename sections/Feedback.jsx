@@ -56,7 +56,7 @@ const Feedback = () => (
             className="w-full h-full object-fill rounded-2xl transition-transform duration-1000 scale-110 group-hover:scale-100"
           />
           <img
-            src="/pod1-nobg.png"
+            src="https://utfs.io/f/O1Z0nCiJ5QIDOpIHleiJ5QIDy7LoZXzKY1vc4k2ba9gVmGep"
             alt="nirmaan pod"
             className="absolute top-0 left-0 w-full h-full object-fill rounded-2xl transition-transform duration-1000 scale-110 group-hover:scale-125"
           />

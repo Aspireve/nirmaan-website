@@ -73,7 +73,7 @@ const Navbar = () => {
             height={28}
             width={28}
             className="scale-[250%] object-contain"
-            src="/logo-nobg.png"
+            src="/cdn/logo.png"
           />
           {navItems}
         </div>
