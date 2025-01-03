@@ -1,7 +1,7 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
-
 import styles from '../styles';
 import { CardSpotlight } from '../components/ui/spotlight';
 import { fadeIn, staggerContainer } from '../utils/motion';
@@ -17,8 +17,11 @@ const Feedback = () => (
     >
       <CardSpotlight className="h-full md:w-96 w-full z-10">
         <div className="inset-0 z-20 md:p-10 p-4 h-full">
-          <img
-            src="/team/Anjanikumar-Dubey.jpg"
+          <Image
+            src="https://utfs.io/f/O1Z0nCiJ5QIDdM1Z1XH4DOMa8I9UWlQVYjyANzp0fRSLxi65"
+            alt="Anjanikumar Dubey"
+            width={500} // Replace with the actual width of your image
+            height={250} // Replace with the actual height of your image
             className="h-1/2 w-full object-cover"
           />
           <div className="feedback-gradient z-20" />
@@ -45,9 +48,11 @@ const Feedback = () => (
         className="pt-15 relative flex-1 flex justify-center items-center overflow-hidden bg-white bg-opacity-30 rounded-2xl "
       >
         <div className="relative w-full lg:h-[550px] h-auto min-h-[210px] rounded-2xl group">
-          <img
-            src="/pod1.png"
+          <Image
+            src="https://utfs.io/f/O1Z0nCiJ5QIDMq07NBIf4DjC8kXy3BPdxYwe0g1FLOUGVRnQ"
             alt="nirmaan pod"
+            width={500} // Replace with the actual width of your image
+            height={500} // Replace with the actual height of your image
             className="w-full h-full object-fill rounded-2xl transition-transform duration-1000 scale-110 group-hover:scale-100"
           />
           <img

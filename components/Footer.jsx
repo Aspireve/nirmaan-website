@@ -11,7 +11,7 @@ const Footer = () => (
           Nirmaan Hyperloop
         </h4>
         <p className="font-light text-white text-center sm:text-left">
-          © 2023 - 2024 Nirmaan Hyperloop. All rights reserved.
+          © 2024 - 2025 Nirmaan Hyperloop. All rights reserved.
         </p>
       </div>
 

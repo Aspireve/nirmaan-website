@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { cn } from '../../utils/cn';
 
@@ -46,9 +47,11 @@ export const InfiniteMovingCards = ({
             onClick={() => router.push(`/Blog/${item.id}`)}
           >
             <div className="relative">
-              <img
-                src={`/images/${item.image}`}
+              <Image
+                src={item.image}
                 alt={item.title}
+                width={1024} // Replace with the actual width of your image
+                height={256} // Replace with the actual height of your image
                 className="w-full h-64 object-cover rounded-ss-2xl rounded-se-2xl block"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-[#000000aa] rounded-ss-2xl rounded-se-2xl" />

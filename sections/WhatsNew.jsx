@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import styles from '../styles';
 import { newFeatures } from '../constants';
 import { NewFeatures, TitleText, TypingText } from '../components';
@@ -45,10 +46,12 @@ const WhatsNew = () => (
         className={`flex-1 ${styles.flexCenter} relative`}
         {...floatingAnimation}
       >
-        <img
-          src="/whats-new.png"
+        <Image
+          src="https://utfs.io/f/O1Z0nCiJ5QIDZDsOz7wjq3SvYGtgsIfdBQHrpJn0Uc485Xkb"
           alt="get-started"
-          className="w-full h-full object-contain filter drop-shadow-[10px_10px_10px_rgba(255,255,255,0.20)]"
+          className="object-contain filter drop-shadow-[10px_10px_10px_rgba(255,255,255,0.20)]"
+          width={800} // Replace with the actual width of your image
+          height={600} // Replace with the actual height of your image
         />
       </motion.div>
     </motion.div>

@@ -7,7 +7,7 @@ import { LampContainer } from '../components/ui/highlights';
 
 const About = () => (
   <div className="h-full mt-5">
-    <LampContainer></LampContainer>
+    <LampContainer />
     <TypingText title="About Us" textStyles="text-center" />
     <TitleText
       title={<>What is Nirmaan Hyperloop</>}

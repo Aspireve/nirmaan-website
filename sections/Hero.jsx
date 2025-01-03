@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useMemo } from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { heroNavVariants } from '../utils/motion';
 import { Button } from '../components/ui/moving-border';
@@ -18,10 +19,13 @@ const Hero = () => {
         transition={{ duration: 2, delay: 0.7 }}
         className="absolute w-full bottom-20 md:bottom-5 md:scale-100"
       >
-        <img
-          src="/herorender.png"
+        <Image
+          src="https://utfs.io/f/O1Z0nCiJ5QIDnB6aUDoGtzFMXCINJwYufhdeo2Lb7qSDQR46"
           alt="hero_cover"
           className="w-full h-fit brightness-[0.6] scale-[2] object-left md:scale-100 overflow-clip object-contain md:brightness-[0.7]"
+          width={1600} // Provide appropriate width
+          height={900} // Provide appropriate height
+          priority // Optional: Preloads the image
         />
       </motion.div>
 

@@ -28,13 +28,13 @@ export const exploreWorlds = [
 
 export const newFeatures = [
   {
-    imgUrl: '/logo-nobg.png',
+    imgUrl: '/cdn/logo.png',
     title: 'Innovation',
     subtitle:
       'At Nirmaan, we are on an unending journey to redefine innovation, continually pushing the boundaries day in, day out, to create a brighter future.',
   },
   {
-    imgUrl: '/logo-nobg.png',
+    imgUrl: '/cdn/logo.png',
     title: 'Engineering',
     subtitle:
       'As a group of dedicated engineers, we are firmly grounded in the relentless pursuit of excellence through top-tier engineering principles.',
@@ -399,7 +399,6 @@ export const teamCreatives = [
   },
 ];
 
-//Leads
 export const teamSoftwareLead = [
   {
     name: 'Aditeya Prajapati',
