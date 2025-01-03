@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles';
@@ -36,7 +36,6 @@ const Navbar = () => {
 
   const navItems = useMemo(
     () =>
-      // eslint-disable-next-line implicit-arrow-linebreak
       navlinks.map((item, index) => (
         <h2
           key={index}
@@ -53,6 +52,12 @@ const Navbar = () => {
       )),
     [hoveredItem, handleMouseEnter, handleMouseLeave],
   );
+
+  const mobileNavVariants = {
+    hidden: { y: '-100%', opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.3 } },
+    exit: { y: '-100%', opacity: 0, transition: { duration: 0.3 } },
+  };
 
   return (
     <>
@@ -94,33 +99,41 @@ const Navbar = () => {
         </button>
       </div>
 
-      {isOpen && (
-        <motion.div
-          className="md:hidden flex justify-center z-50"
-          variants={navVariants}
-          initial="hidden"
-          whileInView="show"
-          style={{ zIndex: 5 }}
-        >
-          <div className="absolute w-[30%] h-[50%] inset-0 gradient-01" />
-          <div className="mx-auto my-8 px-8 flex flex-col justify-center space-y-8 text-white text-24px leading-30px">
-            {navlinks.map((item, index) => (
-              <h2
-                key={index}
-                className={`text-2xl text-center leading-[30px] font-bold text-white transition-opacity duration-300 ${
-                  hoveredItem && hoveredItem !== item.name
-                    ? 'opacity-50'
-                    : 'opacity-100'
-                }`}
-                onMouseEnter={() => handleMouseEnter(item.name)}
-                onMouseLeave={handleMouseLeave}
-              >
-                <Link href={`/${item.route}`}>{item.name}</Link>
-              </h2>
-            ))}
-          </div>
-        </motion.div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className="md:hidden flex justify-center z-50"
+            variants={mobileNavVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            style={{ zIndex: 9999999 }}
+            onAnimationComplete={(definition) => {
+              if (definition === 'exit') setIsOpen(false);
+            }}
+          >
+            <div className="absolute w-[30%] h-[50%] inset-0 gradient-01" />
+            <div className="mx-auto my-8 px-8 flex flex-col justify-center space-y-8 text-white text-24px leading-30px">
+              {navlinks.map((item, index) => (
+                <h2
+                  key={index}
+                  className={`text-2xl text-center leading-[30px] font-bold text-white transition-opacity duration-300 ${
+                    hoveredItem && hoveredItem !== item.name
+                      ? 'opacity-50'
+                      : 'opacity-100'
+                  }`}
+                  onMouseEnter={() => handleMouseEnter(item.name)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <Link href={`${item.route}`} onClick={() => setIsOpen(false)}>
+                    {item.name}
+                  </Link>
+                </h2>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 };
