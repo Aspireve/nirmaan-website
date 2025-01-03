@@ -56,8 +56,6 @@ const page = () => {
     <>
     <div className="bg-black ">
     
-    <Navbar/>
-    
     <div className="text-5xl flex justify-center font-semibold items-center pb-10 pt-5 text-white">
             <div className="bg-purple-500 w-20 h-3"></div>
             <div className="px-3">Blogs</div>
